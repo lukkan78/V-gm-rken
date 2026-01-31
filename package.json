@@ -1,0 +1,11 @@
+{
+  "name": "vagmarkesforhor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape-transportstyrelsen.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
