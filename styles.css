@@ -448,9 +448,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg);
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .category-preview img {
