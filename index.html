@@ -2,12 +2,15 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#0a0a0f">
-  <meta name="description" content="Vägmärkesförhör - träna på svenska vägmärken med quiz och statistik.">
+  <meta name="description" content="Vägmärkesförhör - träna på svenska vägmärken med quiz, spaced repetition och AI-rekommendationer.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Vägmärkesförhör - Träna på svenska vägmärken</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -18,13 +21,18 @@
         <div>
           <h1>VÄGMÄRKESFÖRHÖR</h1>
           <p class="subtitle">Träna på svenska vägmärken</p>
+          <div id="mini-stats"></div>
         </div>
-        <button class="btn btn-secondary" id="install-btn" type="button">Installera</button>
+        <div style="display: flex; gap: 10px;">
+          <button class="ghost-btn" id="dashboard-btn" type="button">Statistik</button>
+          <button class="btn btn-secondary" id="install-btn" type="button" hidden>Installera</button>
+        </div>
       </div>
     </header>
 
     <div id="status-banner" class="status-banner" hidden></div>
 
+    <!-- Start Screen -->
     <div id="start-screen">
       <h2 style="margin-bottom: 20px;">Välj kategorier</h2>
       <div class="category-actions">
@@ -32,15 +40,17 @@
         <button class="ghost-btn" type="button" id="clear-all">Rensa</button>
       </div>
       <div class="category-grid" id="category-grid"></div>
+
       <div class="settings-card">
         <div>
           <h3>Quizinställningar</h3>
-          <p class="muted">Anpassa antal frågor och blandning.</p>
+          <p class="muted">Anpassa quiz efter dina preferenser.</p>
         </div>
         <div class="settings-row">
           <label class="setting">
             <span>Antal frågor</span>
             <select id="question-count">
+              <option value="5">5 frågor</option>
               <option value="10">10 frågor</option>
               <option value="15" selected>15 frågor</option>
               <option value="20">20 frågor</option>
@@ -48,21 +58,50 @@
             </select>
           </label>
           <label class="setting">
+            <span>Quiz-läge</span>
+            <select id="quiz-mode">
+              <option value="standard">Standard</option>
+              <option value="spaced">Spaced Repetition</option>
+              <option value="weakest">Svagaste märken</option>
+              <option value="missed">Senast missade</option>
+              <option value="adaptive">Adaptiv</option>
+            </select>
+          </label>
+          <label class="setting">
+            <span>Frågetyp</span>
+            <select id="question-type">
+              <option value="mixed">Blandad</option>
+              <option value="image-to-text">Bild till text</option>
+              <option value="text-to-image">Text till bild</option>
+            </select>
+          </label>
+          <label class="setting">
+            <span>Svårighetsgrad</span>
+            <select id="difficulty">
+              <option value="easy">Lätt</option>
+              <option value="medium">Medel</option>
+              <option value="hard">Svår</option>
+              <option value="adaptive" selected>Adaptiv</option>
+            </select>
+          </label>
+          <label class="setting">
             <span>Blanda svarsalternativ</span>
             <input type="checkbox" id="shuffle-options" checked>
           </label>
           <label class="setting">
-            <span>Visa kategori efter svar</span>
+            <span>Visa kategori</span>
             <input type="checkbox" id="show-category" checked>
           </label>
         </div>
       </div>
+
       <div style="margin-top: 30px;">
-        <button class="btn" id="start-btn" type="button">Starta förhör</button>
+        <button class="btn" id="start-btn" type="button" disabled>Starta förhör</button>
       </div>
       <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.9rem;" id="selected-count">0 kategorier valda</p>
     </div>
 
+    <!-- Quiz Screen -->
     <div id="quiz-screen">
       <div class="progress-bar">
         <div class="progress-fill" id="progress-fill"></div>
@@ -82,20 +121,18 @@
         </div>
       </div>
       <div class="question-card">
-        <div class="sign-container">
-          <img id="sign-image" class="sign-image" src="" alt="Vägmärke">
+        <div id="question-container">
+          <!-- Question content rendered dynamically -->
         </div>
-        <p class="question-text">Vad betyder detta vägmärke?</p>
-        <p class="question-category" id="question-category"></p>
-        <div class="options" id="options"></div>
         <div class="feedback" id="feedback">
           <div class="feedback-icon" id="feedback-icon"></div>
           <p id="feedback-text"></p>
         </div>
-        <button class="btn next-btn" id="next-btn" type="button">Nästa fråga →</button>
+        <button class="btn next-btn" id="next-btn" type="button" style="display: none;">Nästa fråga</button>
       </div>
     </div>
 
+    <!-- Results Screen -->
     <div id="results-screen">
       <div class="results-card">
         <h2 style="margin-bottom: 30px;">Förhöret avslutat!</h2>
@@ -124,11 +161,18 @@
       </div>
     </div>
 
+    <!-- Dashboard Screen -->
+    <div id="dashboard-screen">
+      <div id="dashboard-container">
+        <!-- Dashboard content rendered dynamically -->
+      </div>
+    </div>
+
     <div class="source-note">
-      📋 Vägmärkesbilderna hämtas direkt från <a href="https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/vagmarken/" target="_blank" rel="noreferrer">Transportstyrelsen</a>
+      Vägmärkesbilderna hämtas direkt från <a href="https://www.transportstyrelsen.se/sv/vagtrafik/trafikregler-och-vagmarken/vagmarken/" target="_blank" rel="noreferrer">Transportstyrelsen</a>
     </div>
   </div>
 
-  <script src="app.js" defer></script>
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
