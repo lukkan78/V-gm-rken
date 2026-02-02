@@ -35,7 +35,6 @@ import {
 const DATA_URL = 'data/signs.json';
 
 // DOM Elements
-let installButton;
 let statusBanner;
 
 async function loadSignData() {
@@ -379,27 +378,6 @@ function registerServiceWorker() {
   navigator.serviceWorker.register('service-worker.js');
 }
 
-function setupInstallPrompt() {
-  installButton = document.getElementById('install-btn');
-  if (!installButton) return;
-
-  let deferredPrompt = null;
-  installButton.hidden = true;
-
-  window.addEventListener('beforeinstallprompt', event => {
-    event.preventDefault();
-    deferredPrompt = event;
-    installButton.hidden = false;
-  });
-
-  installButton.addEventListener('click', async () => {
-    if (!deferredPrompt) return;
-    deferredPrompt.prompt();
-    await deferredPrompt.userChoice;
-    deferredPrompt = null;
-    installButton.hidden = true;
-  });
-}
 
 async function init() {
   // Initialize storage
@@ -422,7 +400,6 @@ async function init() {
 
   // Setup PWA
   registerServiceWorker();
-  setupInstallPrompt();
 
   // Initialize ML model in background (lazy)
   setTimeout(() => {
