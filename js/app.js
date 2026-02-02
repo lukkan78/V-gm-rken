@@ -207,7 +207,13 @@ async function handleAnswer(optionBtn) {
   // Show feedback
   const feedbackContainer = document.getElementById('feedback');
   if (feedbackContainer) {
-    feedbackContainer.outerHTML = createFeedback(result.isCorrect, result.correctAnswer.name);
+    const icon = result.isCorrect ? '✅' : '❌';
+    const text = result.isCorrect ? 'Helt rätt!' : `Rätt svar: ${result.correctAnswer.name}`;
+    feedbackContainer.className = result.isCorrect ? 'feedback correct' : 'feedback incorrect';
+    feedbackContainer.innerHTML = `
+      <div class="feedback-icon">${icon}</div>
+      <p class="feedback-text">${text}</p>
+    `;
   }
 
   // Show next button
