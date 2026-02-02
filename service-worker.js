@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vagmarkesforhor-v5';
+const CACHE_NAME = 'vagmarkesforhor-v6';
 const APP_SHELL = [
   '.',
   'index.html',
