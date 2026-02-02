@@ -362,6 +362,7 @@ function bindEvents() {
 
   // Quiz screen
   document.getElementById('next-btn')?.addEventListener('click', handleNextQuestion);
+  document.getElementById('abort-btn')?.addEventListener('click', backToStart);
 
   // Results screen
   document.getElementById('retry-btn')?.addEventListener('click', handleStartQuiz);

@@ -239,14 +239,22 @@ h3 {
 }
 
 .start-footer {
-  margin-top: 24px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg);
+  padding: 12px 16px;
+  padding-bottom: calc(12px + var(--safe-bottom));
   text-align: center;
+  border-top: 1px solid var(--border);
+  z-index: 10;
 }
 
 .start-footer p {
   color: var(--text-secondary);
-  font-size: 14px;
-  margin-bottom: 16px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .action-buttons {
@@ -401,18 +409,7 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   margin: 12px 0;
-  max-height: 55vh;
-  overflow-y: auto;
-  padding-right: 4px;
-}
-
-.category-grid::-webkit-scrollbar {
-  width: 4px;
-}
-
-.category-grid::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 2px;
+  padding-bottom: 160px;
 }
 
 .category-card {
@@ -462,7 +459,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: #f0f0f0;
+  border: 1px solid #e0e0e0;
   border-radius: 6px;
   padding: 4px;
 }
@@ -594,13 +592,35 @@ h3 {
   margin-top: 8px;
 }
 
+/* Quiz Header */
+.quiz-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.abort-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  padding: 8px 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.abort-btn:hover {
+  color: var(--danger);
+}
+
 /* Progress Bar */
 .progress-bar {
   background: var(--border);
   height: 4px;
   border-radius: 2px;
-  margin-bottom: 20px;
   overflow: hidden;
+  flex: 1;
 }
 
 .progress-fill {
@@ -648,7 +668,8 @@ h3 {
   min-height: 120px;
   max-height: 140px;
   margin-bottom: 16px;
-  background: #ffffff;
+  background: #f0f0f0;
+  border: 1px solid #e0e0e0;
   border-radius: var(--radius);
   padding: 16px;
   overflow: hidden;
@@ -664,19 +685,19 @@ h3 {
 }
 
 @keyframes signFlashCorrect {
-  0% { background: #ffffff; }
+  0% { background: #f0f0f0; }
   20% { background: rgba(52, 199, 89, 0.5); }
   40% { background: rgba(52, 199, 89, 0.25); }
   60% { background: rgba(52, 199, 89, 0.35); }
-  100% { background: #ffffff; }
+  100% { background: #f0f0f0; }
 }
 
 @keyframes signFlashIncorrect {
-  0% { background: #ffffff; }
+  0% { background: #f0f0f0; }
   20% { background: rgba(255, 59, 48, 0.5); }
   40% { background: rgba(255, 59, 48, 0.25); }
   60% { background: rgba(255, 59, 48, 0.35); }
-  100% { background: #ffffff; }
+  100% { background: #f0f0f0; }
 }
 
 .sign-image {
@@ -776,7 +797,7 @@ h3 {
   justify-content: center;
   min-height: 90px;
   max-height: 100px;
-  background: #ffffff;
+  background: #f0f0f0;
   overflow: hidden;
 }
 
