@@ -200,7 +200,16 @@ async function handleAnswer(optionBtn) {
     return;
   }
 
-  // Show correct/incorrect
+  // Flash the sign container or question card
+  const signContainer = document.querySelector('.sign-container') || document.querySelector('.text-question');
+  if (signContainer) {
+    signContainer.classList.remove('flash-correct', 'flash-incorrect');
+    // Trigger reflow to restart animation
+    void signContainer.offsetWidth;
+    signContainer.classList.add(result.isCorrect ? 'flash-correct' : 'flash-incorrect');
+  }
+
+  // Show correct/incorrect on options
   if (result.isCorrect) {
     optionBtn.classList.add('correct');
   } else {
