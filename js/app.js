@@ -140,7 +140,10 @@ function renderQuestion() {
   // Clear feedback and next button
   const feedback = document.getElementById('feedback');
   const nextBtn = document.getElementById('next-btn');
-  if (feedback) feedback.className = 'feedback';
+  if (feedback) {
+    feedback.className = 'feedback';
+    feedback.innerHTML = '<div class="feedback-icon" id="feedback-icon"></div><p id="feedback-text"></p>';
+  }
   if (nextBtn) nextBtn.style.display = 'none';
 
   const questionContainer = document.getElementById('question-container');
@@ -305,11 +308,28 @@ function applySettingsToUi() {
   if (difficulty) difficulty.value = state.difficulty;
 }
 
+function openSettings() {
+  const modal = document.getElementById('settings-modal');
+  if (modal) modal.hidden = false;
+}
+
+function closeSettings() {
+  const modal = document.getElementById('settings-modal');
+  if (modal) modal.hidden = true;
+}
+
 function bindEvents() {
   // Start screen
   document.getElementById('start-btn')?.addEventListener('click', handleStartQuiz);
   document.getElementById('select-all')?.addEventListener('click', selectAllCategories);
   document.getElementById('clear-all')?.addEventListener('click', clearCategories);
+
+  // Settings modal
+  document.getElementById('settings-btn')?.addEventListener('click', openSettings);
+  document.getElementById('close-settings')?.addEventListener('click', closeSettings);
+  document.getElementById('settings-modal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'settings-modal') closeSettings();
+  });
 
   // Quiz screen
   document.getElementById('next-btn')?.addEventListener('click', handleNextQuestion);

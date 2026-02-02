@@ -102,9 +102,9 @@ export function createFeedback(isCorrect, correctAnswer) {
   const className = isCorrect ? 'correct' : 'incorrect';
 
   return `
-    <div class="feedback ${className}">
-      <div class="feedback-icon">${icon}</div>
-      <p class="feedback-text">${text}</p>
+    <div class="feedback ${className}" id="feedback">
+      <div class="feedback-icon" id="feedback-icon">${icon}</div>
+      <p id="feedback-text">${text}</p>
     </div>
   `;
 }

@@ -34,71 +34,93 @@
 
     <!-- Start Screen -->
     <div id="start-screen">
-      <h2 style="margin-bottom: 20px;">Välj kategorier</h2>
+      <div class="start-header">
+        <h2>Välj kategorier</h2>
+        <button class="icon-btn" id="settings-btn" type="button" aria-label="Inställningar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+        </button>
+      </div>
       <div class="category-actions">
         <button class="ghost-btn" type="button" id="select-all">Välj alla</button>
         <button class="ghost-btn" type="button" id="clear-all">Rensa</button>
       </div>
       <div class="category-grid" id="category-grid"></div>
 
-      <div class="settings-card">
-        <div>
-          <h3>Quizinställningar</h3>
-          <p class="muted">Anpassa quiz efter dina preferenser.</p>
-        </div>
-        <div class="settings-row">
-          <label class="setting">
-            <span>Antal frågor</span>
-            <select id="question-count">
-              <option value="5">5 frågor</option>
-              <option value="10">10 frågor</option>
-              <option value="15" selected>15 frågor</option>
-              <option value="20">20 frågor</option>
-              <option value="25">25 frågor</option>
-            </select>
-          </label>
-          <label class="setting">
-            <span>Quiz-läge</span>
-            <select id="quiz-mode">
-              <option value="standard">Standard</option>
-              <option value="spaced">Spaced Repetition</option>
-              <option value="weakest">Svagaste märken</option>
-              <option value="missed">Senast missade</option>
-              <option value="adaptive">Adaptiv</option>
-            </select>
-          </label>
-          <label class="setting">
-            <span>Frågetyp</span>
-            <select id="question-type">
-              <option value="mixed">Blandad</option>
-              <option value="image-to-text">Bild till text</option>
-              <option value="text-to-image">Text till bild</option>
-            </select>
-          </label>
-          <label class="setting">
-            <span>Svårighetsgrad</span>
-            <select id="difficulty">
-              <option value="easy">Lätt</option>
-              <option value="medium">Medel</option>
-              <option value="hard">Svår</option>
-              <option value="adaptive" selected>Adaptiv</option>
-            </select>
-          </label>
-          <label class="setting">
-            <span>Blanda svarsalternativ</span>
-            <input type="checkbox" id="shuffle-options" checked>
-          </label>
-          <label class="setting">
-            <span>Visa kategori</span>
-            <input type="checkbox" id="show-category" checked>
-          </label>
-        </div>
-      </div>
-
-      <div style="margin-top: 30px;">
+      <div class="start-footer">
+        <p id="selected-count">0 kategorier valda</p>
         <button class="btn" id="start-btn" type="button" disabled>Starta förhör</button>
       </div>
-      <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.9rem;" id="selected-count">0 kategorier valda</p>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal-overlay" hidden>
+      <div class="modal-sheet">
+        <div class="modal-header">
+          <h3>Inställningar</h3>
+          <button class="icon-btn" id="close-settings" type="button" aria-label="Stäng">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-content">
+          <div class="settings-section">
+            <h4>Quiz</h4>
+            <label class="setting">
+              <span>Antal frågor</span>
+              <select id="question-count">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15" selected>15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+              </select>
+            </label>
+            <label class="setting">
+              <span>Quiz-läge</span>
+              <select id="quiz-mode">
+                <option value="standard">Standard</option>
+                <option value="spaced">Spaced Repetition</option>
+                <option value="weakest">Svagaste märken</option>
+                <option value="missed">Senast missade</option>
+                <option value="adaptive">Adaptiv</option>
+              </select>
+            </label>
+            <label class="setting">
+              <span>Frågetyp</span>
+              <select id="question-type">
+                <option value="mixed">Blandad</option>
+                <option value="image-to-text">Bild → Text</option>
+                <option value="text-to-image">Text → Bild</option>
+              </select>
+            </label>
+            <label class="setting">
+              <span>Svårighetsgrad</span>
+              <select id="difficulty">
+                <option value="easy">Lätt</option>
+                <option value="medium">Medel</option>
+                <option value="hard">Svår</option>
+                <option value="adaptive" selected>Adaptiv</option>
+              </select>
+            </label>
+          </div>
+          <div class="settings-section">
+            <h4>Visning</h4>
+            <label class="setting">
+              <span>Blanda svarsalternativ</span>
+              <input type="checkbox" id="shuffle-options" checked>
+            </label>
+            <label class="setting">
+              <span>Visa kategori</span>
+              <input type="checkbox" id="show-category" checked>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Quiz Screen -->
