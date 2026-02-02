@@ -119,7 +119,17 @@ async function handleStartQuiz() {
 
 function renderQuestion() {
   const question = loadCurrentQuestion();
-  if (!question) return;
+  if (!question) {
+    console.error('No question loaded');
+    showToast('Kunde inte ladda fråga', 'error');
+    return;
+  }
+
+  if (!question.options || question.options.length === 0) {
+    console.error('No options in question', question);
+    showToast('Inga svarsalternativ', 'error');
+    return;
+  }
 
   const progress = getQuizProgress();
 
@@ -184,6 +194,11 @@ async function handleAnswer(optionBtn) {
   document.querySelectorAll('.option').forEach(opt => opt.classList.add('disabled'));
 
   const result = await checkAnswer(optionId);
+
+  if (!result) {
+    console.error('No result from checkAnswer');
+    return;
+  }
 
   // Show correct/incorrect
   if (result.isCorrect) {

@@ -180,7 +180,15 @@ export async function startQuiz() {
 // Load current question
 export function loadCurrentQuestion() {
   const sign = state.quizSigns[state.currentQuestion];
-  if (!sign) return null;
+  if (!sign) {
+    console.error('No sign at index', state.currentQuestion);
+    return null;
+  }
+
+  if (!allSignsFlat || allSignsFlat.length === 0) {
+    console.error('allSignsFlat is empty');
+    return null;
+  }
 
   currentQuestion = generateQuestion(sign, allSignsFlat);
   return currentQuestion;
@@ -194,9 +202,16 @@ export function getCurrentQuestion() {
 // Check answer and update progress
 export async function checkAnswer(selectedOptionId) {
   if (!currentQuestion) return null;
+  if (!currentQuestion.options || currentQuestion.options.length === 0) return null;
 
   const responseTime = Date.now() - currentQuestion.startTime;
   const correctOption = currentQuestion.options.find(opt => opt.isCorrect);
+
+  if (!correctOption) {
+    console.error('No correct option found in question', currentQuestion);
+    return null;
+  }
+
   const isCorrect = selectedOptionId === correctOption.id;
 
   // Update state
