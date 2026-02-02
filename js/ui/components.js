@@ -27,11 +27,19 @@ export function createCategoryCard(key, category, isSelected = false) {
   const selectedClass = isSelected ? 'selected' : '';
   const colorStyle = category.color ? `--category-color: ${category.color}` : '';
 
+  // Get first sign image from category
+  const previewSign = category.signs && category.signs.length > 0 ? category.signs[0] : null;
+  const previewImg = previewSign ? `${IMAGE_BASE}${previewSign.img}.aspx` : '';
+
   return `
     <div class="category-card ${selectedClass}" data-category="${key}" style="${colorStyle}">
-      <div class="category-icon">${category.icon}</div>
-      <div class="category-name">${category.name}</div>
-      <div class="category-count">${category.signs.length} märken</div>
+      <div class="category-preview">
+        ${previewImg ? `<img src="${previewImg}" alt="${category.name}" loading="lazy">` : ''}
+      </div>
+      <div class="category-info">
+        <div class="category-name">${category.name}</div>
+        <div class="category-count">${category.signs.length} märken</div>
+      </div>
       ${category.code ? `<div class="category-code">${category.code}</div>` : ''}
     </div>
   `;
