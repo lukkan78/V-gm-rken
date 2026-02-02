@@ -340,6 +340,7 @@ function bindEvents() {
 
   // Dashboard
   document.getElementById('dashboard-btn')?.addEventListener('click', showDashboard);
+  document.getElementById('dashboard-btn-main')?.addEventListener('click', showDashboard);
 
   // Settings
   document.getElementById('question-count')?.addEventListener('change', e => {

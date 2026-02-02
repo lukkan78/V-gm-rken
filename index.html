@@ -23,10 +23,7 @@
           <p class="subtitle">Träna på svenska vägmärken</p>
           <div id="mini-stats"></div>
         </div>
-        <div style="display: flex; gap: 10px;">
-          <button class="ghost-btn" id="dashboard-btn" type="button">Statistik</button>
-          <button class="btn btn-secondary" id="install-btn" type="button" hidden>Installera</button>
-        </div>
+        <button class="btn btn-small" id="install-btn" type="button" hidden>Installera</button>
       </div>
     </header>
 
@@ -43,8 +40,11 @@
 
       <div class="start-footer">
         <p id="selected-count">0 kategorier valda</p>
-        <button class="btn" id="start-btn" type="button" disabled>Starta förhör</button>
-        <button class="ghost-btn" id="settings-btn" type="button" style="margin-top: 16px;">Inställningar</button>
+        <div class="action-buttons">
+          <button class="btn" id="start-btn" type="button" disabled>Starta förhör</button>
+          <button class="btn btn-secondary" id="dashboard-btn-main" type="button">Statistik</button>
+        </div>
+        <button class="ghost-btn" id="settings-btn" type="button">Inställningar</button>
       </div>
     </div>
 
