@@ -114,23 +114,46 @@ function extractSigns(html, categoryCode) {
     const idMatch = src.match(/\/link\/(.+?)\.aspx/);
     if (!idMatch) return;
 
-    const id = idMatch[1];
-    const altText = $(img).attr('alt') || '';
-    const figcaption = $(img).closest('figure').find('figcaption').text();
-    const parentText = $(img).parent().text();
-    const name = [altText, figcaption, parentText]
-      .map(value => value.trim())
-      .find(value => value.length > 0);
+    const imgHash = idMatch[1];
+
+    // Try multiple ways to find the sign name
+    let name = '';
+
+    // 1. Check for roadsign-text paragraph (new structure)
+    const container = $(img).closest('div');
+    const roadsignText = container.parent().find('.roadsign-text').first().text().trim();
+    if (roadsignText) {
+      // Remove sign code prefix like "A1. " from name
+      name = roadsignText.replace(/^[A-Z]\d+\.\s*/, '').trim();
+    }
+
+    // 2. Fallback to alt text
+    if (!name) {
+      name = $(img).attr('alt') || '';
+    }
+
+    // 3. Fallback to figcaption
+    if (!name) {
+      name = $(img).closest('figure').find('figcaption').text().trim();
+    }
+
+    // 4. Extract sign code from roadsign-text if available
+    let signCode = '';
+    const codeMatch = roadsignText.match(/^([A-Z]\d+)/);
+    if (codeMatch) {
+      signCode = codeMatch[1];
+    } else {
+      signCode = extractSignCode(imgHash, categoryCode);
+    }
 
     if (!name) return;
 
-    const signCode = extractSignCode(id, categoryCode);
     const difficulty = estimateDifficulty(name, categoryCode);
 
     signs.push({
       id: signCode,
       name,
-      img: id,
+      img: imgHash,
       difficulty
     });
   });

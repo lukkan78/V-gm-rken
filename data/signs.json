@@ -1,141 +1,192 @@
 {
-  "varningsmarken": {
-    "name": "Varningsmärken",
-    "code": "A",
-    "icon": "⚠️",
-    "color": "#FFD700",
+  "vagmarken": {
+    "name": "Vägmärken",
+    "code": "?",
+    "icon": "🚗",
+    "color": "#808080",
     "signs": [
-      { "id": "A1", "name": "Varning för farlig kurva", "img": "316e25e7b16d4eec97e8637bcfe61f33", "difficulty": 1 },
-      { "id": "A2", "name": "Varning för flera farliga kurvor", "img": "e4180c96f2d2479998cc2de5f9d140d9", "difficulty": 2 },
-      { "id": "A3", "name": "Varning för nedförslutning", "img": "4d5bf02ebbf545b5b9626c63ff6f2843", "difficulty": 2 },
-      { "id": "A4", "name": "Varning för stigning", "img": "4dbf39db0ef744ba8506ff8bb7fd0f91", "difficulty": 2 },
-      { "id": "A5", "name": "Varning för avsmalnande väg", "img": "b8281c1ca3824519b0d960b3b5d2e7af", "difficulty": 2 },
-      { "id": "A6", "name": "Varning för bro", "img": "7fe23683e8db4b7ba88e37ae87b5fa5d", "difficulty": 2 },
-      { "id": "A7", "name": "Varning för kaj", "img": "31e5bc945de644bdabd066951a1ca344", "difficulty": 2 },
-      { "id": "A8", "name": "Varning för ojämn väg", "img": "c8ae03a8008d4107970047786f769a10", "difficulty": 1 },
-      { "id": "A9", "name": "Varning för farthinder", "img": "08ffbb964e9340b1829acfd61c9e03bd", "difficulty": 1 },
-      { "id": "A10", "name": "Varning för slirig väg", "img": "ea5ccae6afd645e180e136dd37563e26", "difficulty": 1 },
-      { "id": "A11", "name": "Varning för stenskott", "img": "f6ed60b1475e4c74b8fb810952f0fca5", "difficulty": 2 },
-      { "id": "A12", "name": "Varning för stenras", "img": "6f7f75b137274068a1172f065bb44682", "difficulty": 2 },
-      { "id": "A13", "name": "Varning för övergångsställe", "img": "93ac6aa445734874ad7d5388a02b3657", "difficulty": 1 },
-      { "id": "A14", "name": "Varning för gående", "img": "8b3de7f826c842b48ac7367d374ae9ba", "difficulty": 1 },
-      { "id": "A15", "name": "Varning för barn", "img": "01d26c263aee414a9ebcc4f61252f0c7", "difficulty": 1 },
-      { "id": "A16", "name": "Varning för cyklande och mopedförare", "img": "8e204a13dbf146038ec82976dedacfe4", "difficulty": 1 },
-      { "id": "A17", "name": "Varning för skidåkare", "img": "5a400edeb7744cb59d4623c564dbb4ab", "difficulty": 2 },
-      { "id": "A18", "name": "Varning för ridande", "img": "76fbb981515341baa1760a31c4f9a9b3", "difficulty": 2 },
-      { "id": "A19", "name": "Varning för djur", "img": "0c62c4a3f8ae47fa9803b1721f441b6c", "difficulty": 1 },
-      { "id": "A20", "name": "Varning för vägarbete", "img": "afc047eda2964ef59893d084e7aadf8d", "difficulty": 1 },
-      { "id": "A21", "name": "Slut på sträcka med vägarbete", "img": "fcff8fed172e4c5aa479e072765b638e", "difficulty": 2 },
-      { "id": "A22", "name": "Varning för flerfärgssignal", "img": "b9525d2bc00e49719164d24ba1bd31e0", "difficulty": 2 },
-      { "id": "A23", "name": "Varning för lågt flygande flygplan", "img": "ec9a174a8b4e4b0cae689bdeaebb15c8", "difficulty": 2 },
-      { "id": "A24", "name": "Varning för sidvind", "img": "7114fe4969c146d4831cfd62d133d943", "difficulty": 2 },
-      { "id": "A25", "name": "Varning för mötande trafik", "img": "2cc192f76260488db739dda98edb473f", "difficulty": 2 },
-      { "id": "A26", "name": "Varning för tunnel", "img": "781306f09da440c4a1afd6736f74cb14", "difficulty": 2 },
-      { "id": "A27", "name": "Varning för svag vägkant eller hög körbanekant", "img": "073410f88640458281f3f5b8e2bb9e92", "difficulty": 3 },
-      { "id": "A28", "name": "Varning för vägkorsning", "img": "a9adb7d21a894aa0ab9802f4409b0d88", "difficulty": 2 },
-      { "id": "A29", "name": "Varning för vägkorsning där trafikanter på anslutande väg har väjningsplikt", "img": "90a90eae0b6d43d2aa94532ba03a2832", "difficulty": 3 },
-      { "id": "A30", "name": "Varning för cirkulationsplats", "img": "de8cbdd3138d49d78bad8cfdd3661972", "difficulty": 1 },
-      { "id": "A31", "name": "Varning för långsamtgående fordon", "img": "6b071fca9fbe4a2daa6a76f07fcbf6c1", "difficulty": 2 },
-      { "id": "A32", "name": "Varning för fordon med förspänt dragdjur", "img": "adf1f200563c443bb823f7452dff7569", "difficulty": 3 },
-      { "id": "A33", "name": "Varning för terrängskotertrafik", "img": "c3349e2170f148a2b6ed7c43136ab641", "difficulty": 2 },
-      { "id": "A34", "name": "Varning för kö", "img": "94c4bdd59bd04fa7a9521d90aff3f344", "difficulty": 1 },
-      { "id": "A35", "name": "Varning för järnvägskorsning med bommar", "img": "d408e72e30274e338b6495a01bcc6616", "difficulty": 1 },
-      { "id": "A36", "name": "Varning för järnvägskorsning utan bommar", "img": "25ef733feeb34d759b3383787a0493e7", "difficulty": 2 },
-      { "id": "A37", "name": "Varning för korsning med spårväg utan bommar", "img": "2301141bf55049d8b21233fb1a4f1b11", "difficulty": 2 },
-      { "id": "A38", "name": "Avstånd till plankorsning", "img": "4d5f75934d1b4af1a7ad953365375e92", "difficulty": 3 },
-      { "id": "A39", "name": "Kryssmärke", "img": "11d00c13a6d64d8584f28985fc45e144", "difficulty": 2 },
-      { "id": "A40", "name": "Varning för annan fara", "img": "cadb1036bad34cd491f268c0386985ab", "difficulty": 1 },
-      { "id": "A41", "name": "Varning för olycka", "img": "ac8568a409b9455b95de944250d45a70", "difficulty": 2 }
+      {
+        "id": "?-316E25",
+        "name": "A. Varningsmärken",
+        "img": "316e25e7b16d4eec97e8637bcfe61f33",
+        "difficulty": 1
+      },
+      {
+        "id": "A411",
+        "name": "B. Väjningspliktsmärken",
+        "img": "a411f0cd189548eb91d6da0a622295cc",
+        "difficulty": 1
+      },
+      {
+        "id": "?-EA7859",
+        "name": "C. Förbudsmärken",
+        "img": "ea7859c843b14a02b8cdfb8950658014",
+        "difficulty": 1
+      },
+      {
+        "id": "?-150CE0",
+        "name": "D. Påbudsmärken",
+        "img": "150ce05730314a6d9b38200a3e989045",
+        "difficulty": 1
+      },
+      {
+        "id": "?-9F0875",
+        "name": "E. Anvisningsmärken",
+        "img": "9f08756c01d745ba84463667465bdc7b",
+        "difficulty": 1
+      },
+      {
+        "id": "?-41B580",
+        "name": "F. Lokaliseringsmärken för vägvisning",
+        "img": "41b58075bb1643869928d23dfcc6c1a9",
+        "difficulty": 2
+      },
+      {
+        "id": "?-AA6F24",
+        "name": "F. Lokaliseringsmärken för vägvisning av gång- och cykeltrafik",
+        "img": "aa6f24d84be64455913c65378c5d6189",
+        "difficulty": 4
+      },
+      {
+        "id": "?-121516",
+        "name": "G. Lokaliseringsmärken för upplysning om allmänna inrättningar med mera",
+        "img": "1215160ded994b5abe45260fca6303c6",
+        "difficulty": 4
+      },
+      {
+        "id": "A648",
+        "name": "H. Lokaliseringsmärken för upplysning om serviceanläggningar med mera",
+        "img": "a648bb522c264e29aa3e8c206f767006",
+        "difficulty": 4
+      },
+      {
+        "id": "F8",
+        "name": "I. Lokaliseringsmärken för turistiskt intressanta mål med mera",
+        "img": "f8e8dbae21c8456ea82cbcbae0ff374d",
+        "difficulty": 4
+      },
+      {
+        "id": "?-168B42",
+        "name": "J. Upplysningsmärken",
+        "img": "168b423910c048368d09412729185a77",
+        "difficulty": 1
+      },
+      {
+        "id": "?-8A15D1",
+        "name": "M. Vägmarkeringar",
+        "img": "8a15d1e3cc294addb35ce3158518306b",
+        "difficulty": 1
+      },
+      {
+        "id": "?-98CC76",
+        "name": "P. Tecken av polisman med flera",
+        "img": "98cc76e9325b473d95ceba641bb77864",
+        "difficulty": 2
+      },
+      {
+        "id": "?-45E2F4",
+        "name": "S. Symboler",
+        "img": "45e2f4dc18df406c94b251b51eb45f6d",
+        "difficulty": 1
+      },
+      {
+        "id": "?-79C077",
+        "name": "T. Tilläggstavlor",
+        "img": "79c0771be16a4d8cbb6533358ba5d886",
+        "difficulty": 1
+      },
+      {
+        "id": "?-8C2654",
+        "name": "SIG. Trafiksignaler",
+        "img": "8c26542759ac435380775eb82f31b12e",
+        "difficulty": 1
+      },
+      {
+        "id": "?-9CB617",
+        "name": "V. Tecken av vakt",
+        "img": "9cb61758a086423bbcbf6c25e763a897",
+        "difficulty": 1
+      },
+      {
+        "id": "?-3A3C1A",
+        "name": "X. Andra anordningar för anvisningar för trafiken",
+        "img": "3a3c1aa4848149868175e33f8cab2a45",
+        "difficulty": 3
+      },
+      {
+        "id": "?-79E441",
+        "name": "Y. Signaler vid korsning med järnväg eller spårväg",
+        "img": "79e4419b40d943188af936b404a3b6f0",
+        "difficulty": 3
+      }
     ]
   },
-  "vajningspliktsmarken": {
-    "name": "Väjningspliktsmärken",
-    "code": "B",
-    "icon": "🛑",
-    "color": "#DC143C",
+  "andra-anordningar-for-anvisningar-for-trafiken": {
+    "name": "Andra anordningar för anvisningar för trafiken",
+    "code": "X",
+    "icon": "🚧",
+    "color": "#FF6347",
     "signs": [
-      { "id": "B1", "name": "Väjningsplikt", "img": "a411f0cd189548eb91d6da0a622295cc", "difficulty": 1 },
-      { "id": "B2", "name": "Stopplikt", "img": "e56c907ba203404eaf0f3fe2c270d1f3", "difficulty": 1 },
-      { "id": "B3", "name": "Övergångsställe", "img": "616451ea419c4fcda058a9994ba6815f", "difficulty": 1 },
-      { "id": "B4", "name": "Huvudled", "img": "f22f452faa0d46a8932257d7b0006ef9", "difficulty": 1 },
-      { "id": "B5", "name": "Huvudled upphör", "img": "eb840fbfa1dd43d08904c746d87e6965", "difficulty": 1 },
-      { "id": "B6", "name": "Väjningsplikt mot mötande trafik", "img": "8b65fc14cb4347a49add999296fc173b", "difficulty": 2 },
-      { "id": "B7", "name": "Mötande trafik har väjningsplikt", "img": "7ef925a7b2d04e0b89aee503fa648ab4", "difficulty": 2 },
-      { "id": "B8", "name": "Cykelöverfart", "img": "110babbe95f2426cbee98b998ae4bb5f", "difficulty": 2 }
-    ]
-  },
-  "forbudsmarken": {
-    "name": "Förbudsmärken",
-    "code": "C",
-    "icon": "⛔",
-    "color": "#FF4500",
-    "signs": [
-      { "id": "C1", "name": "Förbud mot infart med fordon", "img": "ea7859c843b14a02b8cdfb8950658014", "difficulty": 1 },
-      { "id": "C2", "name": "Förbud mot trafik med fordon", "img": "e08976ca1d13469da5a119d4c4370477", "difficulty": 2 },
-      { "id": "C3", "name": "Förbud mot trafik med annat motordrivet fordon än moped klass II", "img": "1601c1e1d59e48cbb1faefa7c159610e", "difficulty": 4 },
-      { "id": "C4", "name": "Förbud mot trafik med motordrivet fordon med fler än två hjul", "img": "87cecb873b8d4cb6bcf942e590fddf89", "difficulty": 4 },
-      { "id": "C5", "name": "Förbud mot trafik med motorcykel och moped klass I", "img": "8490aa2084c1466fb64f2fc6c54b82a8", "difficulty": 3 },
-      { "id": "C6", "name": "Förbud mot trafik med motordrivet fordon med tillkopplad släpvagn", "img": "623babd6c6b440818ce237a34beeaf34", "difficulty": 3 },
-      { "id": "C7", "name": "Förbud mot trafik med tung lastbil", "img": "fddb6d2240c74faf9df593d13ee71fef", "difficulty": 2 },
-      { "id": "C8", "name": "Förbud mot trafik med traktor och motorredskap klass II", "img": "1299fa7565cb491e90b85ab19d3f6321", "difficulty": 3 },
-      { "id": "C9", "name": "Förbud mot trafik med fordon lastat med farligt gods", "img": "721d5ea48b27428380221037eca8b963", "difficulty": 3 },
-      { "id": "C10", "name": "Förbud mot trafik med cykel och moped klass II", "img": "a3255706d998413d8488dae048c81d4e", "difficulty": 2 },
-      { "id": "C11", "name": "Förbud mot trafik med moped klass II", "img": "c47f5544890f461d88b35b26d79839e7", "difficulty": 3 },
-      { "id": "C12", "name": "Förbud mot trafik med fordon förspänt med dragdjur", "img": "e5aa49e60d5a424f9c5cf8e10fa8d8cd", "difficulty": 3 },
-      { "id": "C13", "name": "Förbud mot trafik med terrängmotorfordon och terrängsläp", "img": "08334d9b9be44395a8f112b122d072e7", "difficulty": 3 },
-      { "id": "C14", "name": "Förbud mot ridning", "img": "74fdf906d4234d798b4eedcdd9654a77", "difficulty": 2 },
-      { "id": "C15", "name": "Förbud mot gångtrafik", "img": "af49b09ee1d249c199c5d7962057d9e0", "difficulty": 2 },
-      { "id": "C16", "name": "Begränsad fordonsbredd", "img": "f025723e49a8475ba97d8fbd20e65bb9", "difficulty": 2 },
-      { "id": "C17", "name": "Begränsad fordonshöjd", "img": "5a70701c04704e01977ceee05b769a4a", "difficulty": 2 },
-      { "id": "C18", "name": "Begränsad fordonslängd", "img": "e28f89d50b824515991988f87ca39959", "difficulty": 2 },
-      { "id": "C19", "name": "Minsta avstånd", "img": "ed9aa211d35a4710bff2a51b6cefed7a", "difficulty": 3 },
-      { "id": "C20", "name": "Begränsad bruttovikt på fordon", "img": "4a1ae22f13b045229d477963e4072c50", "difficulty": 2 },
-      { "id": "C21", "name": "Begränsad bruttovikt på fordon och fordonståg", "img": "fad26954b6ee480a9081ef45af6272e2", "difficulty": 3 },
-      { "id": "C22", "name": "Bärighetsklass", "img": "b005eb8d86f949f1ad68cd40543d7e4d", "difficulty": 3 },
-      { "id": "C23", "name": "Begränsat axeltryck", "img": "010f934f236542ca84a4777212278dbb", "difficulty": 3 },
-      { "id": "C24", "name": "Begränsat boggitryck", "img": "bfe76d7bf7b64ce38d6526bfd62f8d05", "difficulty": 3 },
-      { "id": "C25", "name": "Förbud mot sväng i korsning", "img": "e64dc8f2231c4721a462a3b3b9aec12c", "difficulty": 1 },
-      { "id": "C26", "name": "Förbud mot U-sväng", "img": "1a08ef742b0c4d0d8dc95c9364524cb9", "difficulty": 1 },
-      { "id": "C27", "name": "Förbud mot omkörning", "img": "672990bd8fb647e783ecda9b9d224277", "difficulty": 1 },
-      { "id": "C28", "name": "Slut på förbud mot omkörning", "img": "f97b0c7e6f484a4aa05d85ce79e740ee", "difficulty": 2 },
-      { "id": "C29", "name": "Förbud mot omkörning med tung lastbil", "img": "fcf48e7eb2f847eab1ecad7491df75fe", "difficulty": 2 },
-      { "id": "C30", "name": "Slut på förbud mot omkörning med tung lastbil", "img": "6d87d41dfff24273ba4d9b0f74698ae0", "difficulty": 3 },
-      { "id": "C31", "name": "Hastighetsbegränsning", "img": "cf476563cf2f4345a4302283365299bb", "difficulty": 1 },
-      { "id": "C32", "name": "Tillfällig hastighetsbegränsning upphör", "img": "49df7a8bd33944d1b87500aa0915451d", "difficulty": 2 },
-      { "id": "C33", "name": "Stopp vid tull", "img": "d4c696c0b4ef4afa85c757babbce3d92", "difficulty": 2 },
-      { "id": "C34", "name": "Stopp för angivet ändamål", "img": "6b1d1cb11a564250955ef0b1171b9dc4", "difficulty": 3 },
-      { "id": "C35", "name": "Förbud mot att parkera fordon", "img": "4af6322cd6184601a4b8c37c5cd54556", "difficulty": 1 },
-      { "id": "C36", "name": "Förbud mot att parkera fordon på dag med udda datum", "img": "49656867445b4ee09292a45cec38a349", "difficulty": 3 },
-      { "id": "C37", "name": "Förbud mot att parkera fordon på dag med jämnt datum", "img": "6bf5bf4bc19a4d249485b778d529b0c5", "difficulty": 3 },
-      { "id": "C38", "name": "Datumparkering", "img": "39400113cd994e4eadae4a8faec2092b", "difficulty": 3 },
-      { "id": "C39", "name": "Förbud mot att stanna och parkera fordon", "img": "03db55ab957640cc97397991c87e999d", "difficulty": 1 },
-      { "id": "C40", "name": "Ändamålsplats", "img": "eb248e65d93b4a479e637991721278db", "difficulty": 3 },
-      { "id": "C41", "name": "Slut på ändamålsplats", "img": "373346909ebc44199f869598f77f7c28", "difficulty": 3 },
-      { "id": "C42", "name": "Vändplats", "img": "6420d51f769d4c4faa76b7305253575d", "difficulty": 2 },
-      { "id": "C43", "name": "Slut på vändplats", "img": "4f0a3faac9b144d980780d7fd2c2ba87", "difficulty": 3 },
-      { "id": "C44", "name": "Förbud mot trafik med annat motordrivet fordon med dubbdäck än moped klass II", "img": "28fd5eafb28d49819ecb24630a78f725", "difficulty": 4 },
-      { "id": "C45", "name": "Särskilda bestämmelser för stannande och parkering", "img": "d95175165d5a492f9819e598c76b3d28", "difficulty": 3 },
-      { "id": "C46", "name": "Begränsat trippelaxeltryck", "img": "3a3a5cddc8a34b71850a8dd87623c0bb", "difficulty": 4 }
-    ]
-  },
-  "pabudsmarken": {
-    "name": "Påbudsmärken",
-    "code": "D",
-    "icon": "🔵",
-    "color": "#1E90FF",
-    "signs": [
-      { "id": "D1", "name": "Påbjuden körriktning", "img": "150ce05730314a6d9b38200a3e989045", "difficulty": 1 },
-      { "id": "D2", "name": "Påbjuden körbana", "img": "2d8dd142db1444179caa7e8b133f0274", "difficulty": 2 },
-      { "id": "D3", "name": "Cirkulationsplats", "img": "dc244724716c42d6a2708a2d302efd04", "difficulty": 1 },
-      { "id": "D4", "name": "Påbjuden cykelbana", "img": "70b0999d7a1e4709a2adc1f4c0ccb213", "difficulty": 1 },
-      { "id": "D5", "name": "Påbjuden gångbana", "img": "3c104d2e1bec41cea8f6f0b8ef32fed4", "difficulty": 1 },
-      { "id": "D6", "name": "Påbjuden gång- och cykelbana", "img": "b5720fc30845469b9d2e0b0541e6921c", "difficulty": 1 },
-      { "id": "D7", "name": "Påbjudna gång- och cykelbanor", "img": "b484061161b84f03b6b60efd2746ff9a", "difficulty": 2 },
-      { "id": "D8", "name": "Påbjuden ridväg", "img": "2f990f773b4f4e038dccecd69f2e1dc2", "difficulty": 2 },
-      { "id": "D9", "name": "Påbjuden led för terrängmotorfordon och terrängsläp", "img": "a01d987d7ad54857a62efe46efbe3aee", "difficulty": 3 },
-      { "id": "D10", "name": "Påbjudet körfält eller körbana för fordon i linjetrafik m.fl.", "img": "0f148df98c8a47b887ddec5c6be8534a", "difficulty": 3 },
-      { "id": "D11", "name": "Slut på påbjuden bana, körfält, väg eller led", "img": "2bf72a2d5822488fb16a45907a71f220", "difficulty": 2 },
-      { "id": "D12", "name": "Påbjuden körriktning för fordon lastat med farligt gods", "img": "de1fe0d7937044d8804d3e0920cbfa6b", "difficulty": 3 }
+      {
+        "id": "X1",
+        "name": "Markeringspil",
+        "img": "3a3c1aa4848149868175e33f8cab2a45",
+        "difficulty": 2
+      },
+      {
+        "id": "X2",
+        "name": "Markeringsskärm för hinder",
+        "img": "9b042e242c3b494794994c5a75b9077f",
+        "difficulty": 2
+      },
+      {
+        "id": "X3",
+        "name": "Markeringsskärm för sidohinder, farthinder med mera",
+        "img": "8f9abc1e0be3413c9ba22fd299f08d46",
+        "difficulty": 4
+      },
+      {
+        "id": "X4",
+        "name": "Avfartsskärm",
+        "img": "8f7ed69891af4c3e84d14495f9e7c607",
+        "difficulty": 2
+      },
+      {
+        "id": "X5",
+        "name": "Gul ljuspil eller ljuspilar",
+        "img": "2bcc3c5b429e4764af29b932889aceda",
+        "difficulty": 2
+      },
+      {
+        "id": "X6",
+        "name": "Särskild varningsanordning",
+        "img": "eeb400933fe4494eb5a697fffdc9d4ef",
+        "difficulty": 2
+      },
+      {
+        "id": "X7",
+        "name": "Vägbom",
+        "img": "7e2b7056c5b04ef3bceb58fa76985adc",
+        "difficulty": 2
+      },
+      {
+        "id": "X8",
+        "name": "Tillfällig stängning",
+        "img": "36b865746e9342aeaa686d965a27cf6f",
+        "difficulty": 2
+      },
+      {
+        "id": "X9",
+        "name": "Cirkulationstrafik",
+        "img": "c273391589c948ff88153efaf7096fc7",
+        "difficulty": 2
+      },
+      {
+        "id": "X10",
+        "name": "Stolpmarkeringsanordning",
+        "img": "84c2eee2912e44789a38193f93d57f3e",
+        "difficulty": 2
+      }
     ]
   },
   "anvisningsmarken": {
@@ -144,40 +195,2146 @@
     "icon": "ℹ️",
     "color": "#4169E1",
     "signs": [
-      { "id": "E1", "name": "Motorväg", "img": "9f08756c01d745ba84463667465bdc7b", "difficulty": 1 },
-      { "id": "E2", "name": "Motorväg upphör", "img": "1de69680d88943428492bd32e51390ce", "difficulty": 1 },
-      { "id": "E3", "name": "Motortrafikled", "img": "07028bcfe5e24528a70c7c1c33c256fb", "difficulty": 2 },
-      { "id": "E4", "name": "Motortrafikled upphör", "img": "d137e7fee18e4f15a9b5aaaee07660f7", "difficulty": 2 },
-      { "id": "E5", "name": "Tättbebyggt område", "img": "b251461e0e47432bb97c408d4241ed43", "difficulty": 1 },
-      { "id": "E6", "name": "Tättbebyggt område upphör", "img": "2eb29ad6d6fc4c0fb4571a5e73538f98", "difficulty": 1 },
-      { "id": "E7", "name": "Gågata", "img": "2862bd556395417f82db98f75ac0923a", "difficulty": 2 },
-      { "id": "E8", "name": "Gågata upphör", "img": "52cf0e305c8543b5866582dd62bf5a0a", "difficulty": 2 },
-      { "id": "E9", "name": "Gångfartsområde", "img": "96cdae8b67f947caa704f9899d6a9eea", "difficulty": 2 },
-      { "id": "E10", "name": "Gångfartsområde upphör", "img": "980e392a5abc4537a4e02ab41daca42f", "difficulty": 2 },
-      { "id": "E11", "name": "Rekommenderad lägre hastighet", "img": "4bc96dcdf0ec4d6c922f11fc7ccd6d87", "difficulty": 2 },
-      { "id": "E12", "name": "Rekommenderad lägre hastighet upphör", "img": "6b45e7991f754906847ab1c74d78ec62", "difficulty": 2 },
-      { "id": "E13", "name": "Rekommenderad högsta hastighet", "img": "4cdd94357be74d5cbc54719805106db4", "difficulty": 2 },
-      { "id": "E14", "name": "Rekommenderad högsta hastighet upphör", "img": "0b9af35a55dc453b90a339be07a724b5", "difficulty": 2 },
-      { "id": "E15", "name": "Sammanvävning", "img": "a7145f42c66d414da15de5735b299c87", "difficulty": 2 },
-      { "id": "E16", "name": "Enkelriktad trafik", "img": "7ade33a7509d4815881761bcd40ff8b1", "difficulty": 1 },
-      { "id": "E17", "name": "Återvändsväg", "img": "b95fe401b8ac4b9ca7f401c0d8f319d8", "difficulty": 1 },
-      { "id": "E18", "name": "Mötesplats", "img": "4bcde4fcda454326ae020c7ced96e66d", "difficulty": 2 },
-      { "id": "E19", "name": "Parkering", "img": "1ab7d59ecd074820aa84b08e5c4c2f2e", "difficulty": 1 },
-      { "id": "E20", "name": "Områdesmärke", "img": "ae32acf75a7246ac8ff46f68cd4c9a4f", "difficulty": 3 },
-      { "id": "E21", "name": "Slut på område", "img": "d0742e73d9ab443e83ea8cd467807d12", "difficulty": 3 },
-      { "id": "E22", "name": "Busshållplats", "img": "a3826421518c4ec5811676d627a50fde", "difficulty": 1 },
-      { "id": "E23", "name": "Taxi", "img": "528c552755b947788c09c7d83fed735c", "difficulty": 2 },
-      { "id": "E24", "name": "Automatisk trafikövervakning", "img": "08fec742b87f479885a931d2b7837e0c", "difficulty": 2 },
-      { "id": "E25", "name": "Betalväg", "img": "436d9d39fc2c4c32af113adb161920c3", "difficulty": 2 },
-      { "id": "E26", "name": "Tunnel", "img": "2616183b40944c9eb71d0e2c2049d6c8", "difficulty": 1 },
-      { "id": "E27", "name": "Nöduppställningsplats", "img": "d73bf522a41545a5ab1c2709a77d1167", "difficulty": 2 },
-      { "id": "E28", "name": "Nödutgång", "img": "13bfb77629194a6c95d0850d675e8cf5", "difficulty": 2 },
-      { "id": "E29", "name": "Utrymningsväg", "img": "5022ba469ade4829870ed9c3b4225860", "difficulty": 2 },
-      { "id": "E30", "name": "Särskilda bestämmelser för parkering", "img": "effb08f5ec55408e8789f9a9469f50f0", "difficulty": 3 },
-      { "id": "E31", "name": "Miljözon", "img": "75fb78ce6c5547a89986963726e76217", "difficulty": 2 },
-      { "id": "E32", "name": "Slut på miljözon", "img": "542a83bed40b49838d7e5eef509cce7d", "difficulty": 2 },
-      { "id": "E33", "name": "Cykelgata", "img": "e0b9c60651ca47ebbf873f2646238a5a", "difficulty": 2 },
-      { "id": "E34", "name": "Cykelgata upphör", "img": "82a89d3d4a5b4cae923cf66e45bdac19", "difficulty": 2 }
+      {
+        "id": "E1",
+        "name": "Motorväg",
+        "img": "9f08756c01d745ba84463667465bdc7b",
+        "difficulty": 1
+      },
+      {
+        "id": "E2",
+        "name": "Motorväg upphör",
+        "img": "1de69680d88943428492bd32e51390ce",
+        "difficulty": 1
+      },
+      {
+        "id": "E3",
+        "name": "Motortrafikled",
+        "img": "07028bcfe5e24528a70c7c1c33c256fb",
+        "difficulty": 1
+      },
+      {
+        "id": "E4",
+        "name": "Motortrafikled upphör",
+        "img": "d137e7fee18e4f15a9b5aaaee07660f7",
+        "difficulty": 1
+      },
+      {
+        "id": "E5",
+        "name": "Tättbebyggt område",
+        "img": "b251461e0e47432bb97c408d4241ed43",
+        "difficulty": 1
+      },
+      {
+        "id": "E6",
+        "name": "Tättbebyggt område upphör",
+        "img": "2eb29ad6d6fc4c0fb4571a5e73538f98",
+        "difficulty": 1
+      },
+      {
+        "id": "E7",
+        "name": "Gågata",
+        "img": "2862bd556395417f82db98f75ac0923a",
+        "difficulty": 1
+      },
+      {
+        "id": "E8",
+        "name": "Gågata upphör",
+        "img": "52cf0e305c8543b5866582dd62bf5a0a",
+        "difficulty": 1
+      },
+      {
+        "id": "E9",
+        "name": "Gångfartsområde",
+        "img": "96cdae8b67f947caa704f9899d6a9eea",
+        "difficulty": 1
+      },
+      {
+        "id": "E10",
+        "name": "Gångfartsområde upphör",
+        "img": "980e392a5abc4537a4e02ab41daca42f",
+        "difficulty": 1
+      },
+      {
+        "id": "E11",
+        "name": "Rekommenderad lägre hastighet",
+        "img": "4bc96dcdf0ec4d6c922f11fc7ccd6d87",
+        "difficulty": 1
+      },
+      {
+        "id": "E12",
+        "name": "Rekommenderad lägre hastighet upphör",
+        "img": "6b45e7991f754906847ab1c74d78ec62",
+        "difficulty": 2
+      },
+      {
+        "id": "E13",
+        "name": "Rekommenderad högsta hastighet",
+        "img": "4cdd94357be74d5cbc54719805106db4",
+        "difficulty": 2
+      },
+      {
+        "id": "E14",
+        "name": "Rekommenderad högsta hastighet upphör",
+        "img": "0b9af35a55dc453b90a339be07a724b5",
+        "difficulty": 2
+      },
+      {
+        "id": "E15",
+        "name": "Sammanvävning",
+        "img": "a7145f42c66d414da15de5735b299c87",
+        "difficulty": 1
+      },
+      {
+        "id": "E16",
+        "name": "Enkelriktad trafik",
+        "img": "7ade33a7509d4815881761bcd40ff8b1",
+        "difficulty": 1
+      },
+      {
+        "id": "E17",
+        "name": "Återvändsväg",
+        "img": "b95fe401b8ac4b9ca7f401c0d8f319d8",
+        "difficulty": 1
+      },
+      {
+        "id": "E18",
+        "name": "Mötesplats",
+        "img": "4bcde4fcda454326ae020c7ced96e66d",
+        "difficulty": 1
+      },
+      {
+        "id": "E19",
+        "name": "Parkering",
+        "img": "1ab7d59ecd074820aa84b08e5c4c2f2e",
+        "difficulty": 1
+      },
+      {
+        "id": "E20",
+        "name": "Områdesmärke",
+        "img": "ae32acf75a7246ac8ff46f68cd4c9a4f",
+        "difficulty": 1
+      },
+      {
+        "id": "E21",
+        "name": "Slut på område",
+        "img": "d0742e73d9ab443e83ea8cd467807d12",
+        "difficulty": 1
+      },
+      {
+        "id": "E22",
+        "name": "Busshållplats",
+        "img": "a3826421518c4ec5811676d627a50fde",
+        "difficulty": 1
+      },
+      {
+        "id": "E23",
+        "name": "Taxi",
+        "img": "528c552755b947788c09c7d83fed735c",
+        "difficulty": 1
+      },
+      {
+        "id": "E24",
+        "name": "Automatisk trafikövervakning",
+        "img": "08fec742b87f479885a931d2b7837e0c",
+        "difficulty": 1
+      },
+      {
+        "id": "E25",
+        "name": "Betalväg",
+        "img": "436d9d39fc2c4c32af113adb161920c3",
+        "difficulty": 1
+      },
+      {
+        "id": "E26",
+        "name": "Tunnel",
+        "img": "2616183b40944c9eb71d0e2c2049d6c8",
+        "difficulty": 1
+      },
+      {
+        "id": "E27",
+        "name": "Nöduppställningsplats",
+        "img": "d73bf522a41545a5ab1c2709a77d1167",
+        "difficulty": 1
+      },
+      {
+        "id": "E28",
+        "name": "Nödutgång",
+        "img": "13bfb77629194a6c95d0850d675e8cf5",
+        "difficulty": 1
+      },
+      {
+        "id": "E29",
+        "name": "Utrymningsväg",
+        "img": "5022ba469ade4829870ed9c3b4225860",
+        "difficulty": 1
+      },
+      {
+        "id": "E30",
+        "name": "Särskilda bestämmelser för parkering",
+        "img": "effb08f5ec55408e8789f9a9469f50f0",
+        "difficulty": 2
+      },
+      {
+        "id": "E31",
+        "name": "Miljözon",
+        "img": "75fb78ce6c5547a89986963726e76217",
+        "difficulty": 1
+      },
+      {
+        "id": "E32",
+        "name": "Slut på miljözon",
+        "img": "542a83bed40b49838d7e5eef509cce7d",
+        "difficulty": 1
+      },
+      {
+        "id": "E33",
+        "name": "Cykelgata",
+        "img": "e0b9c60651ca47ebbf873f2646238a5a",
+        "difficulty": 1
+      },
+      {
+        "id": "E34",
+        "name": "Cykelgata upphör",
+        "img": "82a89d3d4a5b4cae923cf66e45bdac19",
+        "difficulty": 1
+      }
+    ]
+  },
+  "forbudsmarken": {
+    "name": "Förbudsmärken",
+    "code": "C",
+    "icon": "⛔",
+    "color": "#FF4500",
+    "signs": [
+      {
+        "id": "C1",
+        "name": "Förbud mot infart med fordon",
+        "img": "ea7859c843b14a02b8cdfb8950658014",
+        "difficulty": 1
+      },
+      {
+        "id": "C2",
+        "name": "Förbud mot trafik med fordon",
+        "img": "e08976ca1d13469da5a119d4c4370477",
+        "difficulty": 1
+      },
+      {
+        "id": "C3",
+        "name": "Förbud mot trafik med annat motordrivet fordon än moped klass II",
+        "img": "1601c1e1d59e48cbb1faefa7c159610e",
+        "difficulty": 4
+      },
+      {
+        "id": "C4",
+        "name": "Förbud mot trafik med motordrivet fordon med fler än två hjul",
+        "img": "87cecb873b8d4cb6bcf942e590fddf89",
+        "difficulty": 4
+      },
+      {
+        "id": "C5",
+        "name": "Förbud mot trafik med motorcykel och moped klass I",
+        "img": "8490aa2084c1466fb64f2fc6c54b82a8",
+        "difficulty": 3
+      },
+      {
+        "id": "C6",
+        "name": "Förbud mot trafik med motordrivet fordon med tillkopplad släpvagn",
+        "img": "623babd6c6b440818ce237a34beeaf34",
+        "difficulty": 4
+      },
+      {
+        "id": "C7",
+        "name": "Förbud mot trafik med tung lastbil",
+        "img": "fddb6d2240c74faf9df593d13ee71fef",
+        "difficulty": 2
+      },
+      {
+        "id": "C8",
+        "name": "Förbud mot trafik med traktor och motorredskap klass II",
+        "img": "1299fa7565cb491e90b85ab19d3f6321",
+        "difficulty": 3
+      },
+      {
+        "id": "C9",
+        "name": "Förbud mot trafik med fordon lastat med farligt gods",
+        "img": "721d5ea48b27428380221037eca8b963",
+        "difficulty": 3
+      },
+      {
+        "id": "C10",
+        "name": "Förbud mot trafik med cykel och moped klass II",
+        "img": "a3255706d998413d8488dae048c81d4e",
+        "difficulty": 3
+      },
+      {
+        "id": "C11",
+        "name": "Förbud mot trafik med moped klass II",
+        "img": "c47f5544890f461d88b35b26d79839e7",
+        "difficulty": 2
+      },
+      {
+        "id": "C12",
+        "name": "Förbud mot trafik med fordon förspänt med dragdjur",
+        "img": "e5aa49e60d5a424f9c5cf8e10fa8d8cd",
+        "difficulty": 3
+      },
+      {
+        "id": "C13",
+        "name": "Förbud mot trafik med terrängmotorfordon och terrängsläp",
+        "img": "08334d9b9be44395a8f112b122d072e7",
+        "difficulty": 3
+      },
+      {
+        "id": "C14",
+        "name": "Förbud mot ridning",
+        "img": "74fdf906d4234d798b4eedcdd9654a77",
+        "difficulty": 1
+      },
+      {
+        "id": "C15",
+        "name": "Förbud mot gångtrafik",
+        "img": "af49b09ee1d249c199c5d7962057d9e0",
+        "difficulty": 1
+      },
+      {
+        "id": "C16",
+        "name": "Begränsad fordonsbredd",
+        "img": "f025723e49a8475ba97d8fbd20e65bb9",
+        "difficulty": 1
+      },
+      {
+        "id": "C17",
+        "name": "Begränsad fordonshöjd",
+        "img": "5a70701c04704e01977ceee05b769a4a",
+        "difficulty": 1
+      },
+      {
+        "id": "C18",
+        "name": "Begränsad fordonslängd",
+        "img": "e28f89d50b824515991988f87ca39959",
+        "difficulty": 1
+      },
+      {
+        "id": "C19",
+        "name": "Minsta avstånd",
+        "img": "ed9aa211d35a4710bff2a51b6cefed7a",
+        "difficulty": 1
+      },
+      {
+        "id": "C20",
+        "name": "Begränsad bruttovikt på fordon",
+        "img": "4a1ae22f13b045229d477963e4072c50",
+        "difficulty": 2
+      },
+      {
+        "id": "C21",
+        "name": "Begränsad bruttovikt på fordon och fordonståg",
+        "img": "fad26954b6ee480a9081ef45af6272e2",
+        "difficulty": 2
+      },
+      {
+        "id": "C22",
+        "name": "Bärighetsklass",
+        "img": "b005eb8d86f949f1ad68cd40543d7e4d",
+        "difficulty": 1
+      },
+      {
+        "id": "C23",
+        "name": "Begränsat axeltryck",
+        "img": "010f934f236542ca84a4777212278dbb",
+        "difficulty": 1
+      },
+      {
+        "id": "C24",
+        "name": "Begränsat boggitryck",
+        "img": "bfe76d7bf7b64ce38d6526bfd62f8d05",
+        "difficulty": 1
+      },
+      {
+        "id": "C25",
+        "name": "Förbud mot sväng i korsning",
+        "img": "e64dc8f2231c4721a462a3b3b9aec12c",
+        "difficulty": 1
+      },
+      {
+        "id": "C26",
+        "name": "Förbud mot U-sväng",
+        "img": "1a08ef742b0c4d0d8dc95c9364524cb9",
+        "difficulty": 1
+      },
+      {
+        "id": "C27",
+        "name": "Förbud mot omkörning",
+        "img": "672990bd8fb647e783ecda9b9d224277",
+        "difficulty": 1
+      },
+      {
+        "id": "C28",
+        "name": "Slut på förbud mot omkörning",
+        "img": "f97b0c7e6f484a4aa05d85ce79e740ee",
+        "difficulty": 1
+      },
+      {
+        "id": "C29",
+        "name": "Förbud mot omkörning med tung lastbil",
+        "img": "fcf48e7eb2f847eab1ecad7491df75fe",
+        "difficulty": 2
+      },
+      {
+        "id": "C30",
+        "name": "Slut på förbud mot omkörning med tung lastbil",
+        "img": "6d87d41dfff24273ba4d9b0f74698ae0",
+        "difficulty": 2
+      },
+      {
+        "id": "C31",
+        "name": "Hastighetsbegränsning",
+        "img": "cf476563cf2f4345a4302283365299bb",
+        "difficulty": 1
+      },
+      {
+        "id": "C32",
+        "name": "Tillfällig hastighetsbegränsning upphör",
+        "img": "49df7a8bd33944d1b87500aa0915451d",
+        "difficulty": 2
+      },
+      {
+        "id": "C33",
+        "name": "Stopp vid tull",
+        "img": "d4c696c0b4ef4afa85c757babbce3d92",
+        "difficulty": 1
+      },
+      {
+        "id": "C34",
+        "name": "Stopp för angivet ändamål",
+        "img": "6b1d1cb11a564250955ef0b1171b9dc4",
+        "difficulty": 1
+      },
+      {
+        "id": "C35",
+        "name": "Förbud mot att parkera fordon",
+        "img": "4af6322cd6184601a4b8c37c5cd54556",
+        "difficulty": 1
+      },
+      {
+        "id": "C36",
+        "name": "Förbud mot att parkera fordon på dag med udda datum",
+        "img": "49656867445b4ee09292a45cec38a349",
+        "difficulty": 3
+      },
+      {
+        "id": "C37",
+        "name": "Förbud mot att parkera fordon på dag med jämnt datum",
+        "img": "6bf5bf4bc19a4d249485b778d529b0c5",
+        "difficulty": 3
+      },
+      {
+        "id": "C38",
+        "name": "Datumparkering",
+        "img": "39400113cd994e4eadae4a8faec2092b",
+        "difficulty": 1
+      },
+      {
+        "id": "C39",
+        "name": "Förbud mot att stanna och parkera fordon",
+        "img": "03db55ab957640cc97397991c87e999d",
+        "difficulty": 2
+      },
+      {
+        "id": "C40",
+        "name": "Ändamålsplats",
+        "img": "eb248e65d93b4a479e637991721278db",
+        "difficulty": 1
+      },
+      {
+        "id": "C41",
+        "name": "Slut på ändamålsplats",
+        "img": "373346909ebc44199f869598f77f7c28",
+        "difficulty": 1
+      },
+      {
+        "id": "C42",
+        "name": "Vändplats",
+        "img": "6420d51f769d4c4faa76b7305253575d",
+        "difficulty": 1
+      },
+      {
+        "id": "C43",
+        "name": "Slut på vändplats",
+        "img": "4f0a3faac9b144d980780d7fd2c2ba87",
+        "difficulty": 1
+      },
+      {
+        "id": "C44",
+        "name": "Förbud mot trafik med annat motordrivet fordon med dubbdäck än moped klass II",
+        "img": "28fd5eafb28d49819ecb24630a78f725",
+        "difficulty": 4
+      },
+      {
+        "id": "C45",
+        "name": "Särskilda bestämmelser för stannande och parkering",
+        "img": "d95175165d5a492f9819e598c76b3d28",
+        "difficulty": 3
+      },
+      {
+        "id": "C46",
+        "name": "Begränsat trippelaxeltryck",
+        "img": "3a3a5cddc8a34b71850a8dd87623c0bb",
+        "difficulty": 1
+      }
+    ]
+  },
+  "lokaliseringsmarken-for-vagvisning-av-gang-och-cykeltrafik": {
+    "name": "Lokaliseringsmärken för vägvisning av gång- och cykeltrafik",
+    "code": "F1",
+    "icon": "🧭",
+    "color": "#228B22",
+    "signs": [
+      {
+        "id": "F34",
+        "name": "Vägvisare",
+        "img": "aa6f24d84be64455913c65378c5d6189",
+        "difficulty": 1
+      },
+      {
+        "id": "F35",
+        "name": "Tabellvägvisare",
+        "img": "85e49121f7624fdd9d52503c86fcb987",
+        "difficulty": 1
+      },
+      {
+        "id": "F36",
+        "name": "Platsmärke",
+        "img": "e213dccf3c454c8cb4ccab778a4b6a51",
+        "difficulty": 1
+      },
+      {
+        "id": "F37",
+        "name": "Avståndstavla",
+        "img": "b5a4aac1565447ee99206e6b1d5826a3",
+        "difficulty": 1
+      },
+      {
+        "id": "F38",
+        "name": "Cykelled",
+        "img": "f6450ea27f4d42b0a29a0c42ab2a4a23",
+        "difficulty": 1
+      }
+    ]
+  },
+  "lokaliseringsmarken-for-turistiskt-intressanta-mal-med-mera": {
+    "name": "Lokaliseringsmärken för turistiskt intressanta mål med mera",
+    "code": "I",
+    "icon": "🏔️",
+    "color": "#8B4513",
+    "signs": [
+      {
+        "id": "I1",
+        "name": "Turistväg",
+        "img": "f8e8dbae21c8456ea82cbcbae0ff374d",
+        "difficulty": 1
+      },
+      {
+        "id": "I2",
+        "name": "Turistområde",
+        "img": "5857313a96124518b5d3218c6ec89c64",
+        "difficulty": 1
+      },
+      {
+        "id": "I3",
+        "name": "Landmärke",
+        "img": "93d3d741585646ccba0359084a8750e7",
+        "difficulty": 1
+      },
+      {
+        "id": "I4",
+        "name": "Världsarv",
+        "img": "5a82505c8802488aa286277951a19cde",
+        "difficulty": 1
+      }
+    ]
+  },
+  "lokaliseringsmarken-for-upplysning-om-allmanna-inrattningar-med-mera": {
+    "name": "Lokaliseringsmärken för upplysning om allmänna inrättningar med mera",
+    "code": "G",
+    "icon": "🏛️",
+    "color": "#6B8E23",
+    "signs": [
+      {
+        "id": "G1",
+        "name": "Post",
+        "img": "1215160ded994b5abe45260fca6303c6",
+        "difficulty": 1
+      },
+      {
+        "id": "G2",
+        "name": "Hjälptelefon",
+        "img": "39a08f56289049bcbb730c2df1da4743",
+        "difficulty": 1
+      },
+      {
+        "id": "G3",
+        "name": "Radiostation för vägtrafikinformation",
+        "img": "a2465ad03d084bd3a6c07f1bde94823b",
+        "difficulty": 2
+      },
+      {
+        "id": "G4",
+        "name": "Akutsjukhus",
+        "img": "f79b2edca60f421d963a0f927f43467d",
+        "difficulty": 1
+      },
+      {
+        "id": "G5",
+        "name": "Industriområde",
+        "img": "708c3f18121b4e1ab23d12005821b256",
+        "difficulty": 1
+      },
+      {
+        "id": "G6",
+        "name": "Järnvägsstation",
+        "img": "fb5ccc47b2d244dbbeb6cee18fbd1c68",
+        "difficulty": 1
+      },
+      {
+        "id": "G7",
+        "name": "Busstation",
+        "img": "07e8aa5534f440b490bfa768cf32ebb5",
+        "difficulty": 1
+      },
+      {
+        "id": "G8",
+        "name": "Flygplats",
+        "img": "adf5df76dcde43ca8281f31482006562",
+        "difficulty": 1
+      },
+      {
+        "id": "G9",
+        "name": "Brandsläckare",
+        "img": "e1b162d85ae74c7eb9e8dab9b989ae4f",
+        "difficulty": 1
+      },
+      {
+        "id": "G10",
+        "name": "Handelsområde",
+        "img": "9a24cdba5de94f04b8225203f19b667b",
+        "difficulty": 1
+      },
+      {
+        "id": "G11",
+        "name": "Färja",
+        "img": "4e4277f6ea00468d80c8a3c5c999d0ab",
+        "difficulty": 1
+      },
+      {
+        "id": "G12",
+        "name": "Personfärja",
+        "img": "58f024471d404305a0c93ba278a49285",
+        "difficulty": 1
+      }
+    ]
+  },
+  "lokaliseringsmarken-for-upplysning-om-serviceanlaggningar-med-mera": {
+    "name": "Lokaliseringsmärken för upplysning om serviceanläggningar med mera",
+    "code": "H",
+    "icon": "⛽",
+    "color": "#2E8B57",
+    "signs": [
+      {
+        "id": "H1",
+        "name": "Informationsplats",
+        "img": "a648bb522c264e29aa3e8c206f767006",
+        "difficulty": 1
+      },
+      {
+        "id": "H2",
+        "name": "Fordonsverkstad",
+        "img": "5fe626178ee8479f86b1da19d6631612",
+        "difficulty": 1
+      },
+      {
+        "id": "H3",
+        "name": "Drivmedel",
+        "img": "72c7fea6809f432787439e4e14127857",
+        "difficulty": 1
+      },
+      {
+        "id": "H4",
+        "name": "Gas för fordonsdrift",
+        "img": "743cef5eebd24fffbfd7df7a92691915",
+        "difficulty": 1
+      },
+      {
+        "id": "H5",
+        "name": "Servering",
+        "img": "f42b9664e2774507b20a3ecc0247c1e0",
+        "difficulty": 1
+      },
+      {
+        "id": "H6",
+        "name": "Restaurang",
+        "img": "27b7829b053744b59f164baf8932495c",
+        "difficulty": 1
+      },
+      {
+        "id": "H7",
+        "name": "Hotell",
+        "img": "3ff73311326c417c8eea9b9ff0d5f323",
+        "difficulty": 1
+      },
+      {
+        "id": "H8",
+        "name": "Vandrarhem",
+        "img": "00fcaca8aac742788129afc5a1f4c39b",
+        "difficulty": 1
+      },
+      {
+        "id": "H9",
+        "name": "Stugby",
+        "img": "a307e9f790844943bf9a44bd29da9566",
+        "difficulty": 1
+      },
+      {
+        "id": "H10",
+        "name": "Stuga",
+        "img": "dd1d1bf99ac0444bba9c8509cdc1dfbe",
+        "difficulty": 1
+      },
+      {
+        "id": "H11",
+        "name": "Campingplats",
+        "img": "d947497c62554225a36f35aa6c0a4599",
+        "difficulty": 1
+      },
+      {
+        "id": "H12",
+        "name": "Husvagnsplats",
+        "img": "a3c66b3a764a4a34b26674ac695d37d8",
+        "difficulty": 1
+      },
+      {
+        "id": "H13",
+        "name": "Rastplats",
+        "img": "c62bb16969ef4ee0ac395481cf9a5c2d",
+        "difficulty": 1
+      },
+      {
+        "id": "H14",
+        "name": "Toalett",
+        "img": "b5a740e77d2f448392d0fba46625297d",
+        "difficulty": 1
+      },
+      {
+        "id": "H15",
+        "name": "Badplats",
+        "img": "80ac7eb5d2b644e4bbc4656ea109b583",
+        "difficulty": 1
+      },
+      {
+        "id": "H16",
+        "name": "Friluftsområde",
+        "img": "f51db995f39b4b3f83d0f043134f2968",
+        "difficulty": 1
+      },
+      {
+        "id": "H17",
+        "name": "Vandringsled",
+        "img": "3ff47c4a2c73476d93ea7bfde6b1ee6c",
+        "difficulty": 1
+      },
+      {
+        "id": "H18",
+        "name": "Stollift",
+        "img": "8a14b76bd09d4e88871491ec21ef6aaf",
+        "difficulty": 1
+      },
+      {
+        "id": "H19",
+        "name": "Släplift",
+        "img": "b991dd390d4340eba18207d2746908b5",
+        "difficulty": 1
+      },
+      {
+        "id": "H20",
+        "name": "Golfbana",
+        "img": "78d6afe56c03480cacb15d3b7a478183",
+        "difficulty": 1
+      },
+      {
+        "id": "H21",
+        "name": "Försäljningsställe för fiskekort",
+        "img": "f38a5dd985714320aacb4823cc59779b",
+        "difficulty": 2
+      },
+      {
+        "id": "H22",
+        "name": "Sevärdhet",
+        "img": "48fdecc12bbc465590ea08fd200a70e9",
+        "difficulty": 1
+      },
+      {
+        "id": "H23",
+        "name": "Förberedande upplysning om vägnära service",
+        "img": "6669913470f64a9784b816f6fbe63d3f",
+        "difficulty": 2
+      },
+      {
+        "id": "H24",
+        "name": "Rum och frukost",
+        "img": "73873e2f8749451d8bea8c8e5b6dfdac",
+        "difficulty": 1
+      },
+      {
+        "id": "H25",
+        "name": "Gårdsbutik",
+        "img": "1a5066750d414eb698a37ec0cc88d72d",
+        "difficulty": 1
+      },
+      {
+        "id": "H26",
+        "name": "Hantverk",
+        "img": "1639e7e5052448028a765ee5e56b669b",
+        "difficulty": 1
+      },
+      {
+        "id": "H27",
+        "name": "Laddstation",
+        "img": "51cb9edeb0354ddbb261b55736c4b5d9",
+        "difficulty": 1
+      },
+      {
+        "id": "H28",
+        "name": "Anläggning som enbart tillhandahåller platser för bilar med bostadsutrymme",
+        "img": "0bf2e81a206b49eea0de431ad25cac13",
+        "difficulty": 4
+      }
+    ]
+  },
+  "lokaliseringsmarken-for-vagvisning": {
+    "name": "Lokaliseringsmärken för vägvisning",
+    "code": "F1",
+    "icon": "🧭",
+    "color": "#228B22",
+    "signs": [
+      {
+        "id": "F1",
+        "name": "F1-1. Orienteringstavla",
+        "img": "41b58075bb1643869928d23dfcc6c1a9",
+        "difficulty": 2
+      },
+      {
+        "id": "F2",
+        "name": "Orienteringstavla vid förbjuden sväng i korsning",
+        "img": "28046c114eeb48869f74b1ee5dd458df",
+        "difficulty": 3
+      },
+      {
+        "id": "F3",
+        "name": "Tabellorienteringstavla",
+        "img": "c9e9539e741e4f42a4fbf931d025b923",
+        "difficulty": 1
+      },
+      {
+        "id": "F4",
+        "name": "Avfartsorienteringstavla",
+        "img": "d15f332650954e209d52ddf654acaf9d",
+        "difficulty": 1
+      },
+      {
+        "id": "F5",
+        "name": "Vägvisare",
+        "img": "c43fd42519ac43a79de7c70f6a02d946",
+        "difficulty": 1
+      },
+      {
+        "id": "F6",
+        "name": "Tabellvägvisare",
+        "img": "3d89b216daef4156b282e06e3a9e0cb2",
+        "difficulty": 1
+      },
+      {
+        "id": "F7",
+        "name": "Avfartsvisare",
+        "img": "780858523532477ea7f658aaa22595d0",
+        "difficulty": 1
+      },
+      {
+        "id": "F8",
+        "name": "Körfältsvägvisare",
+        "img": "e624d5a7a9a9416aa7000668d152f78c",
+        "difficulty": 1
+      },
+      {
+        "id": "F9",
+        "name": "Samlingsmärke för vägvisning",
+        "img": "a37a2b8464ac4284b270be6ba69f69cd",
+        "difficulty": 1
+      },
+      {
+        "id": "F10",
+        "name": "Platsmärke",
+        "img": "4ffea523e9ae48a3a4e3ef1c75d759f2",
+        "difficulty": 1
+      },
+      {
+        "id": "F11",
+        "name": "Vägnamn",
+        "img": "28db8f2a3f6c41f09042a9e9b523158a",
+        "difficulty": 1
+      },
+      {
+        "id": "F12",
+        "name": "Vattendrag",
+        "img": "73cfbbfec0314e1dafb9df7e6b58babc",
+        "difficulty": 1
+      },
+      {
+        "id": "F13",
+        "name": "Avståndstavla",
+        "img": "502c034d075243e197f0ef0e4421212b",
+        "difficulty": 1
+      },
+      {
+        "id": "F14",
+        "name": "Vägnummer",
+        "img": "bf17634353a64b3fb09c16cd7cfbe3a2",
+        "difficulty": 1
+      },
+      {
+        "id": "F15",
+        "name": "Omledning",
+        "img": "7a55b88fcc9d4e208e649e34b2df451f",
+        "difficulty": 1
+      },
+      {
+        "id": "F16",
+        "name": "Ökning av antal körfält",
+        "img": "37c4d65bea2d435ab00c1e6781d3e0ea",
+        "difficulty": 1
+      },
+      {
+        "id": "F17",
+        "name": "Minskning av antal körfält",
+        "img": "e660c79a3b2f4e5b83d0d3116094794b",
+        "difficulty": 1
+      },
+      {
+        "id": "F18",
+        "name": "Körfältsindelning på sträcka",
+        "img": "cf595bf33dd9490a9cf1330e9aaff63f",
+        "difficulty": 1
+      },
+      {
+        "id": "F19",
+        "name": "Väganslutning med accelerationsfält",
+        "img": "c2dcebb74395447d9faa2ab0612b70ac",
+        "difficulty": 2
+      },
+      {
+        "id": "F20",
+        "name": "Väganslutning med separat körfält",
+        "img": "9df71b74c5af4ff0a3da07a70663fc0f",
+        "difficulty": 2
+      },
+      {
+        "id": "F21",
+        "name": "Körfältsindelning före korsning",
+        "img": "d30ef9567a944b9eb7582f48562a67b9",
+        "difficulty": 2
+      },
+      {
+        "id": "F22",
+        "name": "Riksmärke",
+        "img": "639eeb9aeb3f40c8b706d5fc57fd0284",
+        "difficulty": 1
+      },
+      {
+        "id": "F23",
+        "name": "Orienteringstavla för omledningsväg",
+        "img": "08a948ff08924d378a310260e66569f5",
+        "difficulty": 2
+      },
+      {
+        "id": "F24",
+        "name": "Färdriktning vid omledning",
+        "img": "ba59d2b651624f909fbd513eb38a5524",
+        "difficulty": 1
+      },
+      {
+        "id": "F25",
+        "name": "Körfält upphör",
+        "img": "5f35e84c32dc460a87efcda246052da6",
+        "difficulty": 1
+      },
+      {
+        "id": "F26",
+        "name": "Körfält avstängt",
+        "img": "c4587aae87df4c4ba416dd888afbeb24",
+        "difficulty": 1
+      },
+      {
+        "id": "F27",
+        "name": "Trafikplatsnummer",
+        "img": "5441552ae09f483db7d846eefbaec25a",
+        "difficulty": 1
+      },
+      {
+        "id": "F28",
+        "name": "Parkeringshus",
+        "img": "c5bcc7ce11ba46a8bd25298b205dd566",
+        "difficulty": 1
+      },
+      {
+        "id": "F29",
+        "name": "Infartsparkering",
+        "img": "7c9913b4f72c44b1b9915a721c401c7e",
+        "difficulty": 1
+      },
+      {
+        "id": "F30",
+        "name": "Lokal slinga",
+        "img": "355a5203d5f74f9c99dd6633ec8bc98a",
+        "difficulty": 1
+      },
+      {
+        "id": "F31",
+        "name": "Lämplig väg eller förbifart för visst fordonsslag eller trafikantgrupp",
+        "img": "f903dc2c4cb04d2999383a09a542a6ec",
+        "difficulty": 4
+      },
+      {
+        "id": "F31",
+        "name": "F31a. Färdväg för långa fordonståg",
+        "img": "f3b02726aece40c2ad511e5d7e52a67b",
+        "difficulty": 3
+      },
+      {
+        "id": "F32",
+        "name": "Farligt gods",
+        "img": "c2a4349a958844568273503543b710e2",
+        "difficulty": 1
+      },
+      {
+        "id": "F33",
+        "name": "Räddningsplats",
+        "img": "5afe589a499848afbe4a4f9664662cd6",
+        "difficulty": 1
+      }
+    ]
+  },
+  "pabudsmarken": {
+    "name": "Påbudsmärken",
+    "code": "D",
+    "icon": "🔵",
+    "color": "#1E90FF",
+    "signs": [
+      {
+        "id": "D1",
+        "name": "Påbjuden körriktning",
+        "img": "150ce05730314a6d9b38200a3e989045",
+        "difficulty": 1
+      },
+      {
+        "id": "D2",
+        "name": "Påbjuden körbana",
+        "img": "2d8dd142db1444179caa7e8b133f0274",
+        "difficulty": 1
+      },
+      {
+        "id": "D3",
+        "name": "Cirkulationsplats",
+        "img": "dc244724716c42d6a2708a2d302efd04",
+        "difficulty": 1
+      },
+      {
+        "id": "D4",
+        "name": "Påbjuden cykelbana",
+        "img": "70b0999d7a1e4709a2adc1f4c0ccb213",
+        "difficulty": 1
+      },
+      {
+        "id": "D5",
+        "name": "Påbjuden gångbana",
+        "img": "3c104d2e1bec41cea8f6f0b8ef32fed4",
+        "difficulty": 1
+      },
+      {
+        "id": "D6",
+        "name": "Påbjuden gång- och cykelbana",
+        "img": "b5720fc30845469b9d2e0b0541e6921c",
+        "difficulty": 1
+      },
+      {
+        "id": "D7",
+        "name": "Påbjudna gång- och cykelbanor",
+        "img": "b484061161b84f03b6b60efd2746ff9a",
+        "difficulty": 1
+      },
+      {
+        "id": "D8",
+        "name": "Påbjuden ridväg",
+        "img": "2f990f773b4f4e038dccecd69f2e1dc2",
+        "difficulty": 1
+      },
+      {
+        "id": "D9",
+        "name": "Påbjuden led för terrängmotorfordon och terrängsläp",
+        "img": "a01d987d7ad54857a62efe46efbe3aee",
+        "difficulty": 3
+      },
+      {
+        "id": "D10",
+        "name": "Påbjudet körfält eller körbana för fordon i linjetrafik m.fl.",
+        "img": "0f148df98c8a47b887ddec5c6be8534a",
+        "difficulty": 4
+      },
+      {
+        "id": "D11",
+        "name": "Slut på påbjuden bana, körfält, väg eller led",
+        "img": "2bf72a2d5822488fb16a45907a71f220",
+        "difficulty": 2
+      },
+      {
+        "id": "D12",
+        "name": "Påbjuden körriktning för fordon lastat med farligt gods",
+        "img": "de1fe0d7937044d8804d3e0920cbfa6b",
+        "difficulty": 3
+      }
+    ]
+  },
+  "signaler-vid-korsning-med-jarnvag-eller-sparvag": {
+    "name": "Signaler vid korsning med järnväg eller spårväg",
+    "code": "?",
+    "icon": "🚗",
+    "color": "#808080",
+    "signs": [
+      {
+        "id": "Y1",
+        "name": "Rött blinkande ljus",
+        "img": "79e4419b40d943188af936b404a3b6f0",
+        "difficulty": 1
+      },
+      {
+        "id": "Y2",
+        "name": "Ljudsignal",
+        "img": "fdf0e83fa55a43f095cf80a9a7249090",
+        "difficulty": 1
+      },
+      {
+        "id": "Y3",
+        "name": "Bom",
+        "img": "5443078688684afa94b2734df068ff12",
+        "difficulty": 1
+      },
+      {
+        "id": "Y4",
+        "name": "Plankorsningsskärm",
+        "img": "166bd3ad3b844025a330097f0ed589f5",
+        "difficulty": 1
+      }
+    ]
+  },
+  "symboler": {
+    "name": "Symboler",
+    "code": "S",
+    "icon": "🔣",
+    "color": "#9370DB",
+    "signs": [
+      {
+        "id": "S1",
+        "name": "Tung lastbil",
+        "img": "45e2f4dc18df406c94b251b51eb45f6d",
+        "difficulty": 1
+      },
+      {
+        "id": "S2",
+        "name": "Tung lastbil med tillkopplad släpvagn",
+        "img": "a7f5f7814256438299d86d9419484702",
+        "difficulty": 2
+      },
+      {
+        "id": "S3",
+        "name": "Personbil",
+        "img": "c00fdaf59968484894f040ad1645379d",
+        "difficulty": 1
+      },
+      {
+        "id": "S4",
+        "name": "Personbil med tillkopplad släpkärra",
+        "img": "e98028e2bbb347dcbdbcefdee78a9adf",
+        "difficulty": 2
+      },
+      {
+        "id": "S5",
+        "name": "Buss",
+        "img": "712a630f1d6d4cf09354d07b49cc7dca",
+        "difficulty": 1
+      },
+      {
+        "id": "S6",
+        "name": "Traktor och motorredskap klass II",
+        "img": "9aea70d3349749a78c8d4510fe5596a9",
+        "difficulty": 2
+      },
+      {
+        "id": "S7",
+        "name": "Motorcykel",
+        "img": "079fb1887f6743b5bc06d320dbb034ad",
+        "difficulty": 1
+      },
+      {
+        "id": "S8",
+        "name": "Cykel och moped klass II",
+        "img": "ed4c28295afa4bbdb7f3419f3e5f1d70",
+        "difficulty": 1
+      },
+      {
+        "id": "S9",
+        "name": "Släpkärra",
+        "img": "3a725ca7424a4443952605bbe23cf3a4",
+        "difficulty": 1
+      },
+      {
+        "id": "S10",
+        "name": "Gående",
+        "img": "f5b94b7e0d5843fb88fba4983756998a",
+        "difficulty": 1
+      },
+      {
+        "id": "S11",
+        "name": "Rörelsehindrade",
+        "img": "ac54c82b0ca1417195df2a465f56b6a3",
+        "difficulty": 1
+      },
+      {
+        "id": "S12",
+        "name": "Personbil klass II",
+        "img": "f75f2564250745a59f83a9a265bd89bd",
+        "difficulty": 1
+      },
+      {
+        "id": "S13",
+        "name": "Personfärja",
+        "img": "696133a46caf43829743eaf75f548578",
+        "difficulty": 1
+      }
+    ]
+  },
+  "tecken-av-polisman-med-flera": {
+    "name": "Tecken av polisman med flera",
+    "code": "?",
+    "icon": "🚗",
+    "color": "#808080",
+    "signs": [
+      {
+        "id": "P1",
+        "name": "Stopp",
+        "img": "98cc76e9325b473d95ceba641bb77864",
+        "difficulty": 1
+      },
+      {
+        "id": "P2",
+        "name": "Stopp",
+        "img": "736a05be1fb8429d9bdd867b887e6f0e",
+        "difficulty": 1
+      },
+      {
+        "id": "P3",
+        "name": "Stopp",
+        "img": "09d325b9288e43f29b8bfed837689dd0",
+        "difficulty": 1
+      },
+      {
+        "id": "P4",
+        "name": "Kör fram",
+        "img": "9e5779b550d641bdbe596d3b833dc0d0",
+        "difficulty": 1
+      },
+      {
+        "id": "P5",
+        "name": "Minska hastigheten",
+        "img": "494b4ef9cae74d1d8a60c83da49612ff",
+        "difficulty": 1
+      },
+      {
+        "id": "P6",
+        "name": "Kontroll",
+        "img": "e8a79e5780df474d900c9dad2e89c83a",
+        "difficulty": 1
+      },
+      {
+        "id": "P7",
+        "name": "Förberedande upplysning om kontroll",
+        "img": "ba7f8217f0f84319a8e054348eac7d81",
+        "difficulty": 2
+      },
+      {
+        "id": "P8",
+        "name": "Minska hastigheten",
+        "img": "b58f792de2a34fd0900e9372e1963a7b",
+        "difficulty": 1
+      },
+      {
+        "id": "P9",
+        "name": "Minska hastigheten",
+        "img": "72daa99ce2b24d06a6700c3a41a9586a",
+        "difficulty": 1
+      },
+      {
+        "id": "P10",
+        "name": "Följ efter och stanna bakom polisfordonet när detta stannar",
+        "img": "99e036b0416e457396f67dc399cae6e5",
+        "difficulty": 3
+      },
+      {
+        "id": "P11",
+        "name": "Kör in till vägkanten och stanna framför polisfordonet",
+        "img": "180fe18f28ac4f7aba23305499e5421b",
+        "difficulty": 3
+      }
+    ]
+  },
+  "tecken-av-vakt": {
+    "name": "Tecken av vakt",
+    "code": "?",
+    "icon": "🚗",
+    "color": "#808080",
+    "signs": [
+      {
+        "id": "V1",
+        "name": "Stopp",
+        "img": "9cb61758a086423bbcbf6c25e763a897",
+        "difficulty": 1
+      },
+      {
+        "id": "V2",
+        "name": "Kör fram",
+        "img": "e560880282624431ab654cc829b58725",
+        "difficulty": 1
+      },
+      {
+        "id": "V3",
+        "name": "Kännetecken",
+        "img": "b11a2955387e4781864c96585ec20bf3",
+        "difficulty": 1
+      }
+    ]
+  },
+  "tillaggstavlor": {
+    "name": "Tilläggstavlor",
+    "code": "T",
+    "icon": "➕",
+    "color": "#696969",
+    "signs": [
+      {
+        "id": "T1",
+        "name": "Vägsträckas längd",
+        "img": "79c0771be16a4d8cbb6533358ba5d886",
+        "difficulty": 2
+      },
+      {
+        "id": "T2",
+        "name": "Avstånd",
+        "img": "d807d53d83704b169d3228d8ff9d95a7",
+        "difficulty": 2
+      },
+      {
+        "id": "T3",
+        "name": "Avstånd till stopplikt",
+        "img": "f63aa1744eb445459f1080cc78caf02f",
+        "difficulty": 2
+      },
+      {
+        "id": "T4",
+        "name": "Fri bredd",
+        "img": "f257362d8b954d6cb32a65c945d43c4b",
+        "difficulty": 2
+      },
+      {
+        "id": "T5",
+        "name": "Totalvikt",
+        "img": "34199f9e36084a3ba6f4459f912d576e",
+        "difficulty": 2
+      },
+      {
+        "id": "T6",
+        "name": "Tidsangivelse",
+        "img": "df436a85029c4422b7c88def02d75ae3",
+        "difficulty": 2
+      },
+      {
+        "id": "T7",
+        "name": "Rörelsehindrade",
+        "img": "5e0e11e8325748e7b5286527d2ac42cc",
+        "difficulty": 2
+      },
+      {
+        "id": "T8",
+        "name": "Symboltavla",
+        "img": "d29b97ba23bd4aa48d8a618f708bebe2",
+        "difficulty": 2
+      },
+      {
+        "id": "T9",
+        "name": "Nedsatt syn",
+        "img": "c83a3e7394c34b7bbcb8c2c901882bbd",
+        "difficulty": 2
+      },
+      {
+        "id": "T10",
+        "name": "Nedsatt hörsel",
+        "img": "c5e08a00902e4ebf8e010a6d737a7e27",
+        "difficulty": 2
+      },
+      {
+        "id": "T11",
+        "name": "Utsträckning",
+        "img": "6020d2acd39e4976a8456db75f571ba4",
+        "difficulty": 2
+      },
+      {
+        "id": "T12",
+        "name": "Riktning",
+        "img": "6056fe7ff07946f3a2c804d2d0825406",
+        "difficulty": 2
+      },
+      {
+        "id": "T13",
+        "name": "Flervägsväjning",
+        "img": "0ae277dcb20a40d8a32e141c5ebbe97a",
+        "difficulty": 2
+      },
+      {
+        "id": "T14",
+        "name": "Flervägsstopp",
+        "img": "a4eec2bd26ea4936ac827de9b4e29f95",
+        "difficulty": 2
+      },
+      {
+        "id": "T15",
+        "name": "Vägars fortsättning i korsning",
+        "img": "35149abba51b469887c29db414258d6f",
+        "difficulty": 3
+      },
+      {
+        "id": "T16",
+        "name": "Avgift",
+        "img": "1a0138d1be054ffe9b92bdbc03e1628e",
+        "difficulty": 2
+      },
+      {
+        "id": "T17",
+        "name": "Parkeringsskiva",
+        "img": "645b3a9aefe045e184062f2904fa9ab9",
+        "difficulty": 2
+      },
+      {
+        "id": "T18",
+        "name": "Tillåten tid för parkering",
+        "img": "2ec617b867eb43599abef9d32f0def25",
+        "difficulty": 2
+      },
+      {
+        "id": "T19",
+        "name": "Boende",
+        "img": "b17fc00c7e1447099575a28e03d7ca17",
+        "difficulty": 2
+      },
+      {
+        "id": "T20",
+        "name": "Parkeringsbiljett",
+        "img": "1582d7b9a77a482f8f8cc83f481e8c78",
+        "difficulty": 2
+      },
+      {
+        "id": "T21",
+        "name": "Uppställning av fordon",
+        "img": "6c7176b68d74476392b0873a05af2a48",
+        "difficulty": 2
+      },
+      {
+        "id": "T22",
+        "name": "Text",
+        "img": "f6d7d63eab42426aab1bc0423e6c80e9",
+        "difficulty": 2
+      },
+      {
+        "id": "T23",
+        "name": "Tunnelkategori",
+        "img": "b5ae3461f01d47558388b0519e7861e9",
+        "difficulty": 2
+      },
+      {
+        "id": "T24",
+        "name": "Laddplats",
+        "img": "ecc11166f2bd4f1e8c46dadb57b82324",
+        "difficulty": 2
+      },
+      {
+        "id": "T25",
+        "name": "Öppet dygnet runt",
+        "img": "d0a9f19bca9047338d9df77d3ca1cc8d",
+        "difficulty": 2
+      }
+    ]
+  },
+  "trafiksignaler": {
+    "name": "Trafiksignaler",
+    "code": "?",
+    "icon": "🚗",
+    "color": "#808080",
+    "signs": [
+      {
+        "id": "?-8C2654",
+        "name": "SIG1. Röd",
+        "img": "8c26542759ac435380775eb82f31b12e",
+        "difficulty": 2
+      },
+      {
+        "id": "?-86A9F5",
+        "name": "SIG2. Röd + gul",
+        "img": "86a9f546607047a8a12e30b8a47d9158",
+        "difficulty": 2
+      },
+      {
+        "id": "?-7C08B3",
+        "name": "SIG3. Grön",
+        "img": "7c08b319c0bf4830b757915f70799154",
+        "difficulty": 2
+      },
+      {
+        "id": "F8268",
+        "name": "SIG4. Gul",
+        "img": "f8268bf1c448482b8754517990a85c15",
+        "difficulty": 2
+      },
+      {
+        "id": "F97",
+        "name": "SIG5. Blinkande gul",
+        "img": "f97b976f15c74785ae09517594fb8375",
+        "difficulty": 2
+      },
+      {
+        "id": "?-0425A5",
+        "name": "SIG6. Röd akustisk signal med långsam pulsfrekvens",
+        "img": "0425a56c4aea46ddac974678d89d40b6",
+        "difficulty": 4
+      },
+      {
+        "id": "?-EEDA11",
+        "name": "SIG7. Grön akustisk signal med snabb pulsfrekvens",
+        "img": "eeda112c52944780b2c564b16b74277c",
+        "difficulty": 4
+      },
+      {
+        "id": "B53",
+        "name": "SIG8. S",
+        "img": "b53e9d2ff9ab409e9f826aab8dff2f18",
+        "difficulty": 2
+      },
+      {
+        "id": "?-AB3411",
+        "name": "SIG9. S+vågrätt streck",
+        "img": "ab3411df10e54100b99de195f49d296c",
+        "difficulty": 2
+      },
+      {
+        "id": "D75902606",
+        "name": "SIG10. Lodrätt streck eller pil",
+        "img": "d75902606ca14208aa87a1c9de4f8f35",
+        "difficulty": 3
+      },
+      {
+        "id": "?-52C66C",
+        "name": "SIG11. Vågrätt streck",
+        "img": "52c66cf866ad49bab1524d1049e211ee",
+        "difficulty": 2
+      },
+      {
+        "id": "?-8842AE",
+        "name": "SIG12. Rött kryss",
+        "img": "8842ae0c9c3445cdbca493ec68a78448",
+        "difficulty": 2
+      },
+      {
+        "id": "?-177862",
+        "name": "SIG13. Gul pil eller pilar",
+        "img": "17786219012745359cb427c80bd291b7",
+        "difficulty": 2
+      },
+      {
+        "id": "?-5D1EC4",
+        "name": "SIG14. Grön pil",
+        "img": "5d1ec47c1c834e1498cfa3401e1b95c8",
+        "difficulty": 2
+      },
+      {
+        "id": "B855",
+        "name": "SIG16. Rött blinkande ljus",
+        "img": "b855cdbe5abd4052b7dd4f61fc69e41e",
+        "difficulty": 2
+      },
+      {
+        "id": "?-30A615",
+        "name": "SIG17. Rött fast ljus",
+        "img": "30a615f2f3374e3f8bda7cb3430139d3",
+        "difficulty": 2
+      },
+      {
+        "id": "D9997",
+        "name": "SIG18. Gult blinkande ljus för påkallande av särskild försiktighet",
+        "img": "d9997bfbfcb144c2b7403b90c79a602c",
+        "difficulty": 5
+      }
+    ]
+  },
+  "upplysningsmarken": {
+    "name": "Upplysningsmärken",
+    "code": "J",
+    "icon": "📢",
+    "color": "#4682B4",
+    "signs": [
+      {
+        "id": "J2",
+        "name": "Upplysningsmärke",
+        "img": "168b423910c048368d09412729185a77",
+        "difficulty": 1
+      },
+      {
+        "id": "J3",
+        "name": "Livsfarlig ledning",
+        "img": "8288d4f45fc64b99b087dfdb3eec04ca",
+        "difficulty": 1
+      }
+    ]
+  },
+  "vagmarkeringar": {
+    "name": "Vägmarkeringar",
+    "code": "M",
+    "icon": "〰️",
+    "color": "#708090",
+    "signs": [
+      {
+        "id": "M1",
+        "name": "Mittlinje eller körfältslinje",
+        "img": "8a15d1e3cc294addb35ce3158518306b",
+        "difficulty": 2
+      },
+      {
+        "id": "M2",
+        "name": "Kantlinje",
+        "img": "b3a60fef2393414cb7c69a0afb53528e",
+        "difficulty": 2
+      },
+      {
+        "id": "M3",
+        "name": "Varningslinje",
+        "img": "503a9df742634efdb249c78d86f7a012",
+        "difficulty": 2
+      },
+      {
+        "id": "M4",
+        "name": "Ledlinje",
+        "img": "d52e996df185470fa0de34832b0f50d2",
+        "difficulty": 2
+      },
+      {
+        "id": "M5",
+        "name": "Cykelfältslinje",
+        "img": "a3b0305be29b4f8aaff5225a082b71e8",
+        "difficulty": 2
+      },
+      {
+        "id": "M6",
+        "name": "Linje för fordon i linjetrafik med flera",
+        "img": "ad83276f8c6841ca818daf28fe87a4e0",
+        "difficulty": 3
+      },
+      {
+        "id": "M7",
+        "name": "Reversibelt körfält",
+        "img": "5c3fbd6dde4446bfb92a0b46ddf65144",
+        "difficulty": 2
+      },
+      {
+        "id": "M8",
+        "name": "Heldragen linje",
+        "img": "d0121ff269494e418fcd2aadff8b29d7",
+        "difficulty": 2
+      },
+      {
+        "id": "M9",
+        "name": "Spärrområde",
+        "img": "02182236410f469abd0db1f8b95ef1a4",
+        "difficulty": 2
+      },
+      {
+        "id": "M10",
+        "name": "Mittlinje eller körfältslinje och heldragen linje",
+        "img": "81d930c8febd4b91813d2ca7bb45a67b",
+        "difficulty": 4
+      },
+      {
+        "id": "M11",
+        "name": "Varningslinje och heldragen linje",
+        "img": "bf088e3a9e0a4b99aa464bfb3ecb6072",
+        "difficulty": 3
+      },
+      {
+        "id": "M12",
+        "name": "Mittlinje och varningslinje",
+        "img": "3f29c02a0c074e8699b567b4bd7cffac",
+        "difficulty": 2
+      },
+      {
+        "id": "M13",
+        "name": "Stopplinje",
+        "img": "93a79433406c45b49a972bfa5702a3d8",
+        "difficulty": 2
+      },
+      {
+        "id": "M14",
+        "name": "Väjningslinje",
+        "img": "f2ff215aa22340779f7e7f948d5debc8",
+        "difficulty": 2
+      },
+      {
+        "id": "M15",
+        "name": "Övergångsställe",
+        "img": "613213ed742c4c29b0e8b64cec558cbf",
+        "difficulty": 2
+      },
+      {
+        "id": "M16",
+        "name": "Cykelpassage eller cykelöverfart",
+        "img": "5814cdce24584137bc72eff93c07587d",
+        "difficulty": 3
+      },
+      {
+        "id": "M17",
+        "name": "Farthinder",
+        "img": "73945cda96b64e8bb3b2cb9ebd2349aa",
+        "difficulty": 2
+      },
+      {
+        "id": "M17",
+        "name": "M17a. Cykelbox",
+        "img": "7b088a2517ad4caf9c5e4aea7ba6b926",
+        "difficulty": 3
+      },
+      {
+        "id": "M18",
+        "name": "Förberedande upplysning om väjningsplikt eller stopplikt",
+        "img": "f87b8846f3814520b6b682ccb8bf667f",
+        "difficulty": 4
+      },
+      {
+        "id": "M19",
+        "name": "Körfältspilar",
+        "img": "5219f9a7370f48d0beb63a7519a5fb65",
+        "difficulty": 2
+      },
+      {
+        "id": "M20",
+        "name": "Körfältsbyte",
+        "img": "2594b52b23b24000aa797626f7f5a0f3",
+        "difficulty": 2
+      },
+      {
+        "id": "M21",
+        "name": "Förbud mot att stanna och parkera",
+        "img": "35a6d205ac31488ba24baf3076493543",
+        "difficulty": 3
+      },
+      {
+        "id": "M22",
+        "name": "Förbud mot att parkera",
+        "img": "4f6f0c76d08c4a269d359336d0de1e0d",
+        "difficulty": 2
+      },
+      {
+        "id": "M23",
+        "name": "Förbud mot att stanna och parkera eller att parkera",
+        "img": "2ff85e1ba98a420c83ef149cd978ffd9",
+        "difficulty": 4
+      },
+      {
+        "id": "M24",
+        "name": "Uppställningsplats",
+        "img": "bf964d43cbad46bfa0ccce94ba308401",
+        "difficulty": 2
+      },
+      {
+        "id": "M25",
+        "name": "Gång- och cykelpil",
+        "img": "9f1d1ecf518441a88072526c74b770e5",
+        "difficulty": 2
+      },
+      {
+        "id": "M26",
+        "name": "Cykel",
+        "img": "19c31e8c3f38437fbd72ed41893c13df",
+        "difficulty": 2
+      },
+      {
+        "id": "M27",
+        "name": "Gående",
+        "img": "1bc5c97068fc448a87f927425a792cd9",
+        "difficulty": 2
+      },
+      {
+        "id": "M28",
+        "name": "Buss",
+        "img": "4c77b2e24f48479ca29b716e3624be34",
+        "difficulty": 2
+      },
+      {
+        "id": "M29",
+        "name": "Hastighet",
+        "img": "0a947eb7072a41ae9204ab8ebc380f46",
+        "difficulty": 2
+      },
+      {
+        "id": "M30",
+        "name": "Vägnummer",
+        "img": "fa25c8bce1174e0bb56a51132d918960",
+        "difficulty": 2
+      },
+      {
+        "id": "M31",
+        "name": "Ändamålsplats",
+        "img": "29d0493874174d79adfd79d0d9035645",
+        "difficulty": 2
+      },
+      {
+        "id": "M32",
+        "name": "Stopp",
+        "img": "faa295255202441fae7e59e885523923",
+        "difficulty": 2
+      },
+      {
+        "id": "M33",
+        "name": "Rörelsehindrad",
+        "img": "7e6d65f77a6a4e6484f2ee65d3ee6db3",
+        "difficulty": 2
+      },
+      {
+        "id": "M34",
+        "name": "Information",
+        "img": "7c39dd0da514494e989d68c0ff32b4f0",
+        "difficulty": 2
+      }
+    ]
+  },
+  "vajningspliktsmarken": {
+    "name": "Väjningspliktsmärken",
+    "code": "B",
+    "icon": "🛑",
+    "color": "#DC143C",
+    "signs": [
+      {
+        "id": "B1",
+        "name": "Väjningsplikt",
+        "img": "a411f0cd189548eb91d6da0a622295cc",
+        "difficulty": 1
+      },
+      {
+        "id": "B2",
+        "name": "Stopplikt",
+        "img": "e56c907ba203404eaf0f3fe2c270d1f3",
+        "difficulty": 1
+      },
+      {
+        "id": "B3",
+        "name": "Övergångsställe",
+        "img": "616451ea419c4fcda058a9994ba6815f",
+        "difficulty": 1
+      },
+      {
+        "id": "B4",
+        "name": "Huvudled",
+        "img": "f22f452faa0d46a8932257d7b0006ef9",
+        "difficulty": 1
+      },
+      {
+        "id": "B5",
+        "name": "Huvudled upphör",
+        "img": "eb840fbfa1dd43d08904c746d87e6965",
+        "difficulty": 1
+      },
+      {
+        "id": "B6",
+        "name": "Väjningsplikt mot mötande trafik",
+        "img": "8b65fc14cb4347a49add999296fc173b",
+        "difficulty": 2
+      },
+      {
+        "id": "B7",
+        "name": "Mötande trafik har väjningsplikt",
+        "img": "7ef925a7b2d04e0b89aee503fa648ab4",
+        "difficulty": 2
+      },
+      {
+        "id": "B8",
+        "name": "Cykelöverfart",
+        "img": "110babbe95f2426cbee98b998ae4bb5f",
+        "difficulty": 1
+      }
+    ]
+  },
+  "varningsmarken": {
+    "name": "Varningsmärken",
+    "code": "A",
+    "icon": "⚠️",
+    "color": "#FFD700",
+    "signs": [
+      {
+        "id": "A1",
+        "name": "Varning för farlig kurva",
+        "img": "316e25e7b16d4eec97e8637bcfe61f33",
+        "difficulty": 1
+      },
+      {
+        "id": "A2",
+        "name": "Varning för flera farliga kurvor",
+        "img": "e4180c96f2d2479998cc2de5f9d140d9",
+        "difficulty": 2
+      },
+      {
+        "id": "A3",
+        "name": "Varning för nedförslutning",
+        "img": "4d5bf02ebbf545b5b9626c63ff6f2843",
+        "difficulty": 1
+      },
+      {
+        "id": "A4",
+        "name": "Varning för stigning",
+        "img": "4dbf39db0ef744ba8506ff8bb7fd0f91",
+        "difficulty": 1
+      },
+      {
+        "id": "A5",
+        "name": "Varning för avsmalnande väg",
+        "img": "b8281c1ca3824519b0d960b3b5d2e7af",
+        "difficulty": 1
+      },
+      {
+        "id": "A6",
+        "name": "Varning för bro",
+        "img": "7fe23683e8db4b7ba88e37ae87b5fa5d",
+        "difficulty": 1
+      },
+      {
+        "id": "A7",
+        "name": "Varning för kaj",
+        "img": "31e5bc945de644bdabd066951a1ca344",
+        "difficulty": 1
+      },
+      {
+        "id": "A8",
+        "name": "Varning för ojämn väg",
+        "img": "c8ae03a8008d4107970047786f769a10",
+        "difficulty": 1
+      },
+      {
+        "id": "A9",
+        "name": "Varning för farthinder",
+        "img": "08ffbb964e9340b1829acfd61c9e03bd",
+        "difficulty": 1
+      },
+      {
+        "id": "A10",
+        "name": "Varning för slirig väg",
+        "img": "ea5ccae6afd645e180e136dd37563e26",
+        "difficulty": 1
+      },
+      {
+        "id": "A11",
+        "name": "Varning för stenskott",
+        "img": "f6ed60b1475e4c74b8fb810952f0fca5",
+        "difficulty": 1
+      },
+      {
+        "id": "A12",
+        "name": "Varning för stenras",
+        "img": "6f7f75b137274068a1172f065bb44682",
+        "difficulty": 1
+      },
+      {
+        "id": "A13",
+        "name": "Varning för övergångsställe",
+        "img": "93ac6aa445734874ad7d5388a02b3657",
+        "difficulty": 1
+      },
+      {
+        "id": "A14",
+        "name": "Varning för gående",
+        "img": "8b3de7f826c842b48ac7367d374ae9ba",
+        "difficulty": 1
+      },
+      {
+        "id": "A15",
+        "name": "Varning för barn",
+        "img": "01d26c263aee414a9ebcc4f61252f0c7",
+        "difficulty": 1
+      },
+      {
+        "id": "A16",
+        "name": "Varning för cyklande och mopedförare",
+        "img": "8e204a13dbf146038ec82976dedacfe4",
+        "difficulty": 2
+      },
+      {
+        "id": "A17",
+        "name": "Varning för skidåkare",
+        "img": "5a400edeb7744cb59d4623c564dbb4ab",
+        "difficulty": 1
+      },
+      {
+        "id": "A18",
+        "name": "Varning för ridande",
+        "img": "76fbb981515341baa1760a31c4f9a9b3",
+        "difficulty": 1
+      },
+      {
+        "id": "A19",
+        "name": "Varning för djur",
+        "img": "0c62c4a3f8ae47fa9803b1721f441b6c",
+        "difficulty": 1
+      },
+      {
+        "id": "A20",
+        "name": "Varning för vägarbete",
+        "img": "afc047eda2964ef59893d084e7aadf8d",
+        "difficulty": 1
+      },
+      {
+        "id": "A21",
+        "name": "Slut på sträcka med vägarbete",
+        "img": "fcff8fed172e4c5aa479e072765b638e",
+        "difficulty": 1
+      },
+      {
+        "id": "A22",
+        "name": "Varning för flerfärgssignal",
+        "img": "b9525d2bc00e49719164d24ba1bd31e0",
+        "difficulty": 1
+      },
+      {
+        "id": "A23",
+        "name": "Varning för lågt flygande flygplan",
+        "img": "ec9a174a8b4e4b0cae689bdeaebb15c8",
+        "difficulty": 2
+      },
+      {
+        "id": "A24",
+        "name": "Varning för sidvind",
+        "img": "7114fe4969c146d4831cfd62d133d943",
+        "difficulty": 1
+      },
+      {
+        "id": "A25",
+        "name": "Varning för mötande trafik",
+        "img": "2cc192f76260488db739dda98edb473f",
+        "difficulty": 1
+      },
+      {
+        "id": "A26",
+        "name": "Varning för tunnel",
+        "img": "781306f09da440c4a1afd6736f74cb14",
+        "difficulty": 1
+      },
+      {
+        "id": "A27",
+        "name": "Varning för svag vägkant eller hög körbanekant",
+        "img": "073410f88640458281f3f5b8e2bb9e92",
+        "difficulty": 3
+      },
+      {
+        "id": "A28",
+        "name": "Varning för vägkorsning",
+        "img": "a9adb7d21a894aa0ab9802f4409b0d88",
+        "difficulty": 1
+      },
+      {
+        "id": "A29",
+        "name": "Varning för vägkorsning där trafikanter på anslutande väg har väjningsplikt eller stopplikt",
+        "img": "90a90eae0b6d43d2aa94532ba03a2832",
+        "difficulty": 4
+      },
+      {
+        "id": "A30",
+        "name": "Varning för cirkulationsplats",
+        "img": "de8cbdd3138d49d78bad8cfdd3661972",
+        "difficulty": 1
+      },
+      {
+        "id": "A31",
+        "name": "Varning för långsamtgående fordon",
+        "img": "6b071fca9fbe4a2daa6a76f07fcbf6c1",
+        "difficulty": 2
+      },
+      {
+        "id": "A32",
+        "name": "Varning för fordon med förspänt dragdjur",
+        "img": "adf1f200563c443bb823f7452dff7569",
+        "difficulty": 2
+      },
+      {
+        "id": "A33",
+        "name": "Varning för terrängskotertrafik",
+        "img": "c3349e2170f148a2b6ed7c43136ab641",
+        "difficulty": 2
+      },
+      {
+        "id": "A34",
+        "name": "Varning för kö",
+        "img": "94c4bdd59bd04fa7a9521d90aff3f344",
+        "difficulty": 1
+      },
+      {
+        "id": "A35",
+        "name": "Varning för järnvägskorsning med bommar",
+        "img": "d408e72e30274e338b6495a01bcc6616",
+        "difficulty": 2
+      },
+      {
+        "id": "A36",
+        "name": "Varning för järnvägskorsning utan bommar",
+        "img": "25ef733feeb34d759b3383787a0493e7",
+        "difficulty": 2
+      },
+      {
+        "id": "A37",
+        "name": "Varning för korsning med spårväg utan bommar",
+        "img": "2301141bf55049d8b21233fb1a4f1b11",
+        "difficulty": 2
+      },
+      {
+        "id": "A38",
+        "name": "Avstånd till plankorsning",
+        "img": "4d5f75934d1b4af1a7ad953365375e92",
+        "difficulty": 1
+      },
+      {
+        "id": "A39",
+        "name": "Kryssmärke",
+        "img": "11d00c13a6d64d8584f28985fc45e144",
+        "difficulty": 1
+      },
+      {
+        "id": "A40",
+        "name": "Varning för annan fara",
+        "img": "cadb1036bad34cd491f268c0386985ab",
+        "difficulty": 1
+      },
+      {
+        "id": "A41",
+        "name": "Varning för olycka",
+        "img": "ac8568a409b9455b95de944250d45a70",
+        "difficulty": 1
+      }
     ]
   }
 }
